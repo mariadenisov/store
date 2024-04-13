@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Store</title>
+  <style>
+    /* button {
+      white-space: nowrap;
+      /* Prevents the button text from wrapping */
+    /* margin-left: auto; */
+    /* Pushes the button to the right */
+    /* } */
+
+    .hidden {
+      display: none;
+    }
+
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 1000;
+      /* Higher z-index to be on top of the cart */
+      padding-top: 100px;
+    }
+
+    /* Modal Content (Image) */
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+    }
+
+    /* Caption of Modal Image (Image Text) - Same Width as the Image */
+    #caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+    }
+
+    /* The Close Button */
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    #items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      padding-top: 60px;
+    }
+
+    .item {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      position: relative;
+    }
+
+    .image-container {
+      position: relative;
+      width: 100%;
+    }
+
+    .item img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      font-size: 16px;
+      /* smaller arrow icons */
+      color: white;
+      background: rgba(50, 50, 50, 0.6);
+      /* Darker background for better visibility */
+      border: 2px solid white;
+      /* White border to make it stand out */
+      padding: 8px;
+      /* Adjust padding to make the buttons smaller */
+      border-radius: 50%;
+      z-index: 2;
+      transition: background-color 0.3s, transform 0.3s;
+      /* Smooth background color change and transform on hover */
+    }
+
+    .arrow:hover {
+      background-color: rgba(50, 50, 50, 0.8);
+      /* Darken the background on hover */
+      transform: translateY(-50%) scale(1.1);
+      /* Slightly increase the size on hover */
+    }
+
+    .left-arrow {
+      left: -6px;
+      /* Adjust position to ensure it's fully visible on the edge */
+    }
+
+    .right-arrow {
+      right: -6px;
+      /* Adjust position to ensure it's fully visible on the edge */
+    }
+
+
+    .item h2,
+    .item p,
+    .item button {
+      margin-top: 10px;
+    }
+
+    .item h2 {
+      font-size: 20px;
+      color: #333;
+    }
+
+    .item p {
+      color: #666;
+    }
+
+    .item button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .item button:hover {
+      background-color: #0056b3;
+    }
+
+    #cart {
+      /* position: fixed; */
+      /* Make the cart stay at the top */
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      border-radius: 0;
+      /* Since it's at the top, you might not need rounded corners */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      z-index: 10;
+      /* Make sure it's above other items */
+    }
+
+    #cart h2 {
+      font-size: 24px;
+      color: #333;
+    }
+
+    #cart-items,
+    #cart-total {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #cart-items li {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #666;
+    }
+
+    #cart button {
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #cart button:hover {
+      background-color: #218838;
+    }
+
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* Position the "prev button" to the left */
+    .prev {
+      left: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    #cart-message {
+      display: flex;
+      align-items: center;
+      padding-right: 20px;
+      /* Add padding to ensure content does not touch the edges */
+    }
+
+    #cart-message span {
+      margin-right: 10px;
+      /* Spacing between text and button */
+      flex-shrink: 1;
+      /* Allows the text to shrink if necessary */
+    }
+
+    #scroll-to-top-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: none;
+      /* Initially hidden */
+      z-index: 100;
+      /* Ensure it's above other elements */
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="cart">
+    <h2>Cart</h2>
+    <ul id="cart-items"></ul>
+    <div id="cart-total"></div>
+    <div id="cart-message">
+      <span>Add items to the cart and press the button to start a WhatsApp chat.</span>
+      <button id="whatsapp-chat-button">Start WhatsApp Chat</button>
+    </div>
+  </div>
+
+  <div id="items"></div>
+
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+
+    <!-- Left and Right navigation arrows -->
+    <span class="prev">&#10094;</span>
+    <span class="next">&#10095;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+  </div>
+  <button id="scroll-to-top-btn" style="display: none;">↑ Top</button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const itemsContainer = document.getElementById('items');
+      const cartItemsList = document.getElementById('cart-items');
+      const cartTotalDiv = document.getElementById('cart-total');
+      const modal = document.getElementById("myModal");
+      const modalImg = document.getElementById("img01");
+      const captionText = document.getElementById("caption");
+      const closeBtn = document.getElementsByClassName("close")[0];
+      const prevModal = document.querySelector('.prev');
+      const nextModal = document.querySelector('.next');
+      const scrollToTopBtn = document.getElementById('scroll-to-top-btn');
+      let modalImages = [];
+      let modalImageIndex = 0;
+      let cartItems = [];
+
+      function updateModalImage() {
+        modalImg.src = modalImages[modalImageIndex];
+        captionText.innerHTML = modalImages[modalImageIndex].split('/').pop();
+      }
+
+      prevModal.onclick = () => {
+        modalImageIndex = modalImageIndex > 0 ? modalImageIndex - 1 : modalImages.length - 1;
+        updateModalImage();
+      };
+
+      nextModal.onclick = () => {
+        modalImageIndex = modalImageIndex < modalImages.length - 1 ? modalImageIndex + 1 : 0;
+        updateModalImage();
+      };
+
+      closeBtn.onclick = () => {
+        modal.style.display = "none";
+        // Show the blue arrow buttons again when the modal is closed
+        document.querySelectorAll('.item .arrow').forEach(button => button.classList.remove('hidden'));
+      };
+
+      fetch('items.json').then(response => response.json()).then(data => renderItems(data));
+
+      function renderItems(items) {
+        items.forEach(item => {
+          const itemDiv = document.createElement('div');
+          itemDiv.classList.add('item');
+          const imageContainer = document.createElement('div');
+          imageContainer.classList.add('image-container');
+          let itemImageIndex = 0;
+          const img = document.createElement('img');
+          img.src = item.images[itemImageIndex];
+          img.alt = item.name;
+          imageContainer.appendChild(img);
+          itemDiv.appendChild(imageContainer);
+          itemDiv.appendChild(createTextElement('h2', item.name));
+          itemDiv.appendChild(createTextElement('p', item.description));
+          itemDiv.appendChild(createTextElement('p', `₪${item.price.toFixed(2)}`));
+          const leftArrow = document.createElement('button');
+          leftArrow.innerHTML = '&#8656;';
+          leftArrow.classList.add('arrow', 'left-arrow');
+          leftArrow.onclick = () => {
+            itemImageIndex = changeImage(item.images, img, -1, itemImageIndex);
+          };
+          const rightArrow = document.createElement('button');
+          rightArrow.innerHTML = '&#8658;';
+          rightArrow.classList.add('arrow', 'right-arrow');
+          rightArrow.onclick = () => {
+            itemImageIndex = changeImage(item.images, img, 1, itemImageIndex);
+          };
+          const addButton = document.createElement('button');
+          addButton.textContent = 'Add to Cart';
+          addButton.onclick = () => addToCart(item);
+          imageContainer.appendChild(leftArrow);
+          imageContainer.appendChild(rightArrow);
+          itemDiv.appendChild(addButton);
+          itemsContainer.appendChild(itemDiv);
+          img.onclick = () => {
+            modalImages = item.images;
+            modalImageIndex = itemImageIndex;
+            updateModalImage();
+            modal.style.display = "block";
+            // Hide the blue arrow buttons when the modal is opened
+            document.querySelectorAll('.item .arrow').forEach(button => button.classList.add('hidden'));
+          };
+        });
+      }
+      function changeImage(images, imgElement, direction, indexRef) {
+        indexRef += direction;
+        if (indexRef < 0) indexRef = images.length - 1;
+        else if (indexRef >= images.length) indexRef = 0;
+        imgElement.src = images[indexRef];
+        return indexRef; // Return the updated index
+      }
+
+      function createTextElement(tag, text) {
+        const element = document.createElement(tag);
+        element.textContent = text;
+        return element;
+      }
+
+      function addToCart(item) {
+        const found = cartItems.some(cartItem => cartItem.name === item.name);
+        if (!found) {
+          cartItems.push({ ...item, quantity: 1 });
+          renderCart();
+        } else {
+          alert('Item already added to cart.');
+        }
+      }
+
+      function removeFromCart(index) {
+        cartItems.splice(index, 1);
+        renderCart();
+      }
+
+      function renderCart() {
+        cartItemsList.innerHTML = '';
+        let total = 0;
+        cartItems.forEach((item, index) => {
+          total += item.price * item.quantity;
+          const li = document.createElement('li');
+          li.textContent = `${item.name} - ₪${item.price.toFixed(2)} x ${item.quantity}`;
+          const removeButton = document.createElement('button');
+          removeButton.textContent = 'Remove';
+          removeButton.onclick = () => removeFromCart(index);
+          li.appendChild(removeButton);
+          cartItemsList.appendChild(li);
+        });
+        cartTotalDiv.innerHTML = `<strong>Total: ₪${total.toFixed(2)}</strong>`;
+      }
+
+      // Define the startWhatsAppChat function here, at the global level
+      window.startWhatsAppChat = function () {
+        if (cartItems.length === 0) {
+          alert('Cart is empty. Please add items to the cart.');
+          return;
+        }
+        const itemsMessage = cartItems.map(item => `${item.name} - ₪${item.price.toFixed(2)}`).join('%0A');
+        const whatsappLink = `https://wa.me/?text=Items%20in%20my%20cart:%0A${itemsMessage}`;
+        window.open(whatsappLink, '_blank');
+      }
+
+      // Select the button and attach the event listener
+      const whatsappButton = document.getElementById('whatsapp-chat-button');
+      whatsappButton.addEventListener('click', startWhatsAppChat);
+
+      window.onscroll = function () {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      };
+      scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth' // Smooth scroll
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

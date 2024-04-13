@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Item 1",
+    "description": "Description of Item 1",
+    "price": 25.00,
+    "images": [
+      "images/TV1.jpg",
+      "images/TV2.jpg"
+    ]
+  },
+  {
+    "name": "Item 2",
+    "description": "Description of Item 2",
+    "price": 10.00,
+    "images": [
+      "images/TV1.jpg",
+      "images/TV2.jpg"
+    ]
+  },
+  {
+    "name": "Item 3",
+    "description": "Description of Item 3",
+    "price": 10.00,
+    "images": [
+      "images/TV1.jpg",
+      "images/TV2.jpg"
+    ]
+  },
+  {
+    "name": "Item 4",
+    "description": "Description of Item 4",
+    "price": 10.00,
+    "images": [
+      "images/TV1.jpg",
+      "images/TV2.jpg"
+    ]
+  },
+  {
+    "name": "Item 5",
+    "description": "Description of Item 5",
+    "price": 25.00,
+    "images": [
+      "images/TV1.jpg",
+      "images/TV2.jpg"
+    ]
+  },
+  {
+    "name": "Item 6",
+    "description": "Description of Item 6",
+    "price": 10.00,
+    "images": [
+      "images/TV1.jpg",
+      "images/TV2.jpg"
+    ]
+  },
+  {
+    "name": "Item 7",
+    "description": "Description of Item 7",
+    "price": 10.00,
+    "images": [
+      "images/TV1.jpg",
+      "images/TV2.jpg"
+    ]
+  },
+  {
+    "name": "Item 8",
+    "description": "Description of Item 8",
+    "price": 10.00,
+    "images": [
+      "images/TV1.jpg",
+      "images/TV2.jpg"
+    ]
+  }
+]
