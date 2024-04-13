@@ -448,8 +448,10 @@
           alert('Cart is empty. Please add items to the cart.');
           return;
         }
+        let total = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
         const itemsMessage = cartItems.map(item => `${item.name} - ₪${item.price.toFixed(2)}`).join('%0A');
-        const whatsappLink = `https://wa.me/972584433306?text=Items%20in%20my%20cart:%0A${itemsMessage}`;
+        const message = `Items in my cart:%0A${itemsMessage}%0A%0ATotal: ₪${total.toFixed(2)}`;
+        const whatsappLink = `https://wa.me/972584433306?text=${message}`;
         window.open(whatsappLink, '_blank');
       }
 
