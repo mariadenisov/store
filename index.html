@@ -296,7 +296,13 @@
       <button id="whatsapp-chat-button">Start WhatsApp Chat</button>
     </div>
   </div>
-
+  <div id="categories">
+    <button class="category-btn" data-category="Category1">Category 1</button>
+    <button class="category-btn" data-category="Category2">Category 2</button>
+    <button class="category-btn" data-category="Category3">Category 3</button>
+    <button class="category-btn" data-category="Category4">Category 4</button>
+    <button class="category-btn" data-category="Category5">Category 5</button>
+  </div>
   <div id="items"></div>
 
   <div id="myModal" class="modal">
@@ -350,11 +356,21 @@
         // Show the blue arrow buttons again when the modal is closed
         document.querySelectorAll('.item .arrow').forEach(button => button.classList.remove('hidden'));
       };
+      document.querySelectorAll('.category-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const category = e.target.getAttribute('data-category');
+          fetch('items.json')
+            .then(response => response.json())
+            .then(data => renderItems(data, category));
+        });
+      });
 
       fetch('items.json').then(response => response.json()).then(data => renderItems(data));
 
-      function renderItems(items) {
-        items.forEach(item => {
+      function renderItems(items, category = null) {
+        itemsContainer.innerHTML = ''; // Clear the items container
+        const filteredItems = category ? items.filter(item => item.category === category) : items;
+        filteredItems.forEach(item => {
           const itemDiv = document.createElement('div');
           itemDiv.classList.add('item');
           const imageContainer = document.createElement('div');
