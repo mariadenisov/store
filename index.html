@@ -367,51 +367,55 @@
 
       fetch('items.json').then(response => response.json()).then(data => renderItems(data));
 
-      function renderItems(items, category = null) {
+      function renderItems(items, filterCategory = null) {
         itemsContainer.innerHTML = ''; // Clear the items container
-        const filteredItems = category ? items.filter(item => item.category === category) : items;
-        filteredItems.forEach(item => {
-          const itemDiv = document.createElement('div');
-          itemDiv.classList.add('item');
-          const imageContainer = document.createElement('div');
-          imageContainer.classList.add('image-container');
-          let itemImageIndex = 0;
-          const img = document.createElement('img');
-          img.src = item.images[itemImageIndex];
-          img.alt = item.name;
-          imageContainer.appendChild(img);
-          itemDiv.appendChild(imageContainer);
-          itemDiv.appendChild(createTextElement('h2', item.name));
-          itemDiv.appendChild(createTextElement('p', item.description));
-          itemDiv.appendChild(createTextElement('p', `₪${item.price.toFixed(2)}`));
-          const leftArrow = document.createElement('button');
-          leftArrow.innerHTML = '&#8656;';
-          leftArrow.classList.add('arrow', 'left-arrow');
-          leftArrow.onclick = () => {
-            itemImageIndex = changeImage(item.images, img, -1, itemImageIndex);
-          };
-          const rightArrow = document.createElement('button');
-          rightArrow.innerHTML = '&#8658;';
-          rightArrow.classList.add('arrow', 'right-arrow');
-          rightArrow.onclick = () => {
-            itemImageIndex = changeImage(item.images, img, 1, itemImageIndex);
-          };
-          const addButton = document.createElement('button');
-          addButton.textContent = 'Add to Cart';
-          addButton.onclick = () => addToCart(item);
-          imageContainer.appendChild(leftArrow);
-          imageContainer.appendChild(rightArrow);
-          itemDiv.appendChild(addButton);
-          itemsContainer.appendChild(itemDiv);
-          img.onclick = () => {
-            modalImages = item.images;
-            modalImageIndex = itemImageIndex;
-            updateModalImage();
-            modal.style.display = "block";
-            // Hide the blue arrow buttons when the modal is opened
-            document.querySelectorAll('.item .arrow').forEach(button => button.classList.add('hidden'));
-          };
-        });
+        // const filteredItems = category
+        items
+          .filter(item => {
+            return filterCategory == null || item.categories.includes(filterCategory);
+          })
+          .forEach(item => {
+            const itemDiv = document.createElement('div');
+            itemDiv.classList.add('item');
+            const imageContainer = document.createElement('div');
+            imageContainer.classList.add('image-container');
+            let itemImageIndex = 0;
+            const img = document.createElement('img');
+            img.src = item.images[itemImageIndex];
+            img.alt = item.name;
+            imageContainer.appendChild(img);
+            itemDiv.appendChild(imageContainer);
+            itemDiv.appendChild(createTextElement('h2', item.name));
+            itemDiv.appendChild(createTextElement('p', item.description));
+            itemDiv.appendChild(createTextElement('p', `₪${item.price.toFixed(2)}`));
+            const leftArrow = document.createElement('button');
+            leftArrow.innerHTML = '&#8656;';
+            leftArrow.classList.add('arrow', 'left-arrow');
+            leftArrow.onclick = () => {
+              itemImageIndex = changeImage(item.images, img, -1, itemImageIndex);
+            };
+            const rightArrow = document.createElement('button');
+            rightArrow.innerHTML = '&#8658;';
+            rightArrow.classList.add('arrow', 'right-arrow');
+            rightArrow.onclick = () => {
+              itemImageIndex = changeImage(item.images, img, 1, itemImageIndex);
+            };
+            const addButton = document.createElement('button');
+            addButton.textContent = 'Add to Cart';
+            addButton.onclick = () => addToCart(item);
+            imageContainer.appendChild(leftArrow);
+            imageContainer.appendChild(rightArrow);
+            itemDiv.appendChild(addButton);
+            itemsContainer.appendChild(itemDiv);
+            img.onclick = () => {
+              modalImages = item.images;
+              modalImageIndex = itemImageIndex;
+              updateModalImage();
+              modal.style.display = "block";
+              // Hide the blue arrow buttons when the modal is opened
+              document.querySelectorAll('.item .arrow').forEach(button => button.classList.add('hidden'));
+            };
+          });
       }
       function changeImage(images, imgElement, direction, indexRef) {
         indexRef += direction;
