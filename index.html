@@ -290,6 +290,7 @@
   <div id="cart">
     <h2>Cart</h2>
     <ul id="cart-items"></ul>
+    <button id="clear-cart-button" disabled>Remove All</button>
     <div id="cart-total"></div>
     <div id="cart-message">
       <span>Add items to the cart and press the button to start a WhatsApp chat.</span>
@@ -447,7 +448,7 @@
       }
 
       function renderCart() {
-        cartItemsList.innerHTML = '';
+        cartItemsList.innerHTML = ''; // Clear existing items
         let total = 0;
         cartItems.forEach((item, index) => {
           total += item.price * item.quantity;
@@ -455,44 +456,68 @@
           li.textContent = `${item.name} - ₪${item.price.toFixed(2)} x ${item.quantity}`;
           const removeButton = document.createElement('button');
           removeButton.textContent = 'Remove';
-          removeButton.onclick = () => removeFromCart(index);
+          removeButton.onclick = () => {
+            removeFromCart(index); // Call removeFromCart which re-renders the cart
+          };
           li.appendChild(removeButton);
           cartItemsList.appendChild(li);
         });
         cartTotalDiv.innerHTML = `<strong>Total: ₪${total.toFixed(2)}</strong>`;
+        updateClearCartButtonState(); // Update button state after rendering
       }
 
-      // Define the startWhatsAppChat function here, at the global level
-      window.startWhatsAppChat = function () {
+      function updateClearCartButtonState() {
+        const clearCartButton = document.getElementById('clear-cart-button');
         if (cartItems.length === 0) {
-          alert('Cart is empty. Please add items to the cart.');
-          return;
-        }
-        let total = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
-        const itemsMessage = cartItems.map(item => `${item.name} - ₪${item.price.toFixed(2)}`).join('%0A');
-        const message = `Items in my cart:%0A${itemsMessage}%0A%0ATotal: ₪${total.toFixed(2)}`;
-        const whatsappLink = `https://wa.me/972584433306?text=${message}`;
-        window.open(whatsappLink, '_blank');
-      }
-
-      // Select the button and attach the event listener
-      const whatsappButton = document.getElementById('whatsapp-chat-button');
-      whatsappButton.addEventListener('click', startWhatsAppChat);
-
-      window.onscroll = function () {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          scrollToTopBtn.style.display = "block";
+          clearCartButton.disabled = true; // Disable the button
+          clearCartButton.style.display = 'none'; // Hide the button
         } else {
-          scrollToTopBtn.style.display = "none";
+          clearCartButton.disabled = false; // Enable the button
+          clearCartButton.style.display = 'inline-block'; // Show the button
         }
-      };
-      scrollToTopBtn.addEventListener('click', () => {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth' // Smooth scroll
+      }
+        function clearCart() {
+          cartItems = []; // Empty the cart
+          renderCart(); // Re-render the cart, which updates the button state
+        }
+
+        document.getElementById('clear-cart-button').addEventListener('click', clearCart);
+
+        // Initial call to set up everything correctly
+        renderCart(); // Render an initially empty cart
+        updateClearCartButtonState(); // Initial state update when the page loads
+
+        // Define the startWhatsAppChat function here, at the global level
+        window.startWhatsAppChat = function () {
+          if (cartItems.length === 0) {
+            alert('Cart is empty. Please add items to the cart.');
+            return;
+          }
+          let total = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
+          const itemsMessage = cartItems.map(item => `${item.name} - ₪${item.price.toFixed(2)}`).join('%0A');
+          const message = `Items in my cart:%0A${itemsMessage}%0A%0ATotal: ₪${total.toFixed(2)}`;
+          const whatsappLink = `https://wa.me/972584433306?text=${message}`;
+          window.open(whatsappLink, '_blank');
+        }
+
+        // Select the button and attach the event listener
+        const whatsappButton = document.getElementById('whatsapp-chat-button');
+        whatsappButton.addEventListener('click', startWhatsAppChat);
+
+        window.onscroll = function () {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollToTopBtn.style.display = "block";
+          } else {
+            scrollToTopBtn.style.display = "none";
+          }
+        };
+        scrollToTopBtn.addEventListener('click', () => {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Smooth scroll
+          });
         });
       });
-    });
   </script>
 </body>
 
