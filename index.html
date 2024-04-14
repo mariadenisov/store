@@ -334,9 +334,10 @@
       const prevModal = document.querySelector('.prev');
       const nextModal = document.querySelector('.next');
       const scrollToTopBtn = document.getElementById('scroll-to-top-btn');
+      const clearCartButton = document.getElementById('clear-cart-button');
       let modalImages = [];
       let modalImageIndex = 0;
-      let cartItems = [];
+      let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
       function updateModalImage() {
         modalImg.src = modalImages[modalImageIndex];
@@ -442,12 +443,12 @@
       function addToCart(item) {
         const found = cartItems.some(cartItem => cartItem.name === item.name);
         if (!found) {
-          cartItems.push({ ...item, quantity: 1 });
-          renderCart();
+            cartItems.push({ ...item, quantity: 1 });
+            renderCart();
         } else {
-          alert('Item already added to cart.');
+            alert('Item already added to cart.');
         }
-      }
+    }
 
       function removeFromCart(index) {
         cartItems.splice(index, 1);
@@ -455,7 +456,7 @@
       }
 
       function renderCart() {
-        cartItemsList.innerHTML = ''; // Clear existing items
+        cartItemsList.innerHTML = '';
         let total = 0;
         cartItems.forEach((item, index) => {
           total += item.price * item.quantity;
@@ -464,13 +465,14 @@
           const removeButton = document.createElement('button');
           removeButton.textContent = 'Remove';
           removeButton.onclick = () => {
-            removeFromCart(index); // Call removeFromCart which re-renders the cart
+            removeFromCart(index);
           };
           li.appendChild(removeButton);
           cartItemsList.appendChild(li);
         });
         cartTotalDiv.innerHTML = `<strong>Total: ₪${total.toFixed(2)}</strong>`;
-        updateClearCartButtonState(); // Update button state after rendering
+        updateClearCartButtonState();
+        localStorage.setItem('cartItems', JSON.stringify(cartItems)); // Save current state to localStorage
       }
 
       function updateClearCartButtonState() {
