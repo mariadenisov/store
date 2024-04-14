@@ -303,6 +303,7 @@
     <button class="category-btn" data-category="Category3">Category 3</button>
     <button class="category-btn" data-category="Category4">Category 4</button>
     <button class="category-btn" data-category="Category5">Category 5</button>
+    <button class="category-btn" data-category="All">All Items</button>
   </div>
   <div id="items"></div>
 
@@ -360,9 +361,15 @@
       document.querySelectorAll('.category-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
           const category = e.target.getAttribute('data-category');
-          fetch('items.json')
-            .then(response => response.json())
-            .then(data => renderItems(data, category));
+          if (category === "All") {
+            fetch('items.json')
+              .then(response => response.json())
+              .then(data => renderItems(data));
+          } else {
+            fetch('items.json')
+              .then(response => response.json())
+              .then(data => renderItems(data, category));
+          }
         });
       });
 
@@ -476,48 +483,48 @@
           clearCartButton.style.display = 'inline-block'; // Show the button
         }
       }
-        function clearCart() {
-          cartItems = []; // Empty the cart
-          renderCart(); // Re-render the cart, which updates the button state
+      function clearCart() {
+        cartItems = []; // Empty the cart
+        renderCart(); // Re-render the cart, which updates the button state
+      }
+
+      document.getElementById('clear-cart-button').addEventListener('click', clearCart);
+
+      // Initial call to set up everything correctly
+      renderCart(); // Render an initially empty cart
+      updateClearCartButtonState(); // Initial state update when the page loads
+
+      // Define the startWhatsAppChat function here, at the global level
+      window.startWhatsAppChat = function () {
+        if (cartItems.length === 0) {
+          alert('Cart is empty. Please add items to the cart.');
+          return;
         }
+        let total = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
+        const itemsMessage = cartItems.map(item => `${item.name} - ₪${item.price.toFixed(2)}`).join('%0A');
+        const message = `Items in my cart:%0A${itemsMessage}%0A%0ATotal: ₪${total.toFixed(2)}`;
+        const whatsappLink = `https://wa.me/972584433306?text=${message}`;
+        window.open(whatsappLink, '_blank');
+      }
 
-        document.getElementById('clear-cart-button').addEventListener('click', clearCart);
+      // Select the button and attach the event listener
+      const whatsappButton = document.getElementById('whatsapp-chat-button');
+      whatsappButton.addEventListener('click', startWhatsAppChat);
 
-        // Initial call to set up everything correctly
-        renderCart(); // Render an initially empty cart
-        updateClearCartButtonState(); // Initial state update when the page loads
-
-        // Define the startWhatsAppChat function here, at the global level
-        window.startWhatsAppChat = function () {
-          if (cartItems.length === 0) {
-            alert('Cart is empty. Please add items to the cart.');
-            return;
-          }
-          let total = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
-          const itemsMessage = cartItems.map(item => `${item.name} - ₪${item.price.toFixed(2)}`).join('%0A');
-          const message = `Items in my cart:%0A${itemsMessage}%0A%0ATotal: ₪${total.toFixed(2)}`;
-          const whatsappLink = `https://wa.me/972584433306?text=${message}`;
-          window.open(whatsappLink, '_blank');
+      window.onscroll = function () {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
         }
-
-        // Select the button and attach the event listener
-        const whatsappButton = document.getElementById('whatsapp-chat-button');
-        whatsappButton.addEventListener('click', startWhatsAppChat);
-
-        window.onscroll = function () {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            scrollToTopBtn.style.display = "block";
-          } else {
-            scrollToTopBtn.style.display = "none";
-          }
-        };
-        scrollToTopBtn.addEventListener('click', () => {
-          window.scrollTo({
-            top: 0,
-            behavior: 'smooth' // Smooth scroll
-          });
+      };
+      scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth' // Smooth scroll
         });
       });
+    });
   </script>
 </body>
 
