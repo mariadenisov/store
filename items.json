@@ -7,7 +7,7 @@
       "images/TV1.jpg",
       "images/TV2.jpg"
     ],
-    "categories": ["Category1", "Category2"]
+    "categories": ["ריהוט", "מוצרים חשמלים"]
   },
   {
     "name": "Item 2",
@@ -17,7 +17,7 @@
       "images/TV1.jpg",
       "images/TV2.jpg"
     ],
-    "categories": ["Category3", "Category4"]
+    "categories": ["מטבח", "אחר"]
   },
   {
     "name": "Item 3",
@@ -27,7 +27,7 @@
       "images/TV1.jpg",
       "images/TV2.jpg"
     ],
-    "categories": ["Category2"]
+    "categories": ["מוצרים חשמלים"]
   },
   {
     "name": "Item 4",
@@ -37,7 +37,7 @@
       "images/TV1.jpg",
       "images/TV2.jpg"
     ],
-    "categories": ["Category1"]
+    "categories": ["ריהוט"]
   },
   {
     "name": "Item 5",
@@ -47,7 +47,7 @@
       "images/TV1.jpg",
       "images/TV2.jpg"
     ],
-    "categories": ["Category1"]
+    "categories": ["ריהוט"]
   },
   {
     "name": "Item 6",
@@ -57,7 +57,7 @@
       "images/TV1.jpg",
       "images/TV2.jpg"
     ],
-    "categories": ["Category2"]
+    "categories": ["מוצרים חשמלים"]
   },
   {
     "name": "Item 7",
@@ -67,7 +67,7 @@
       "images/TV1.jpg",
       "images/TV2.jpg"
     ],
-    "categories": ["Category4"]
+    "categories": ["אחר"]
   },
   {
     "name": "Item 8",
@@ -77,6 +77,6 @@
       "images/TV1.jpg",
       "images/TV2.jpg"
     ],
-    "categories": ["Category5"]
+    "categories": ["חינם"]
   }
 ]

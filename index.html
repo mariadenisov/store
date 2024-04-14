@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he">
 
 <head>
   <meta charset="UTF-8">
@@ -340,24 +340,25 @@
 </head>
 
 <body>
+  <body dir="rtl">
   <h1 id="site-name">GARAGE SALE</h1>
   <div id="cart">
-    <h2>Cart</h2>
+    <h2>הסל שלי</h2>
     <ul id="cart-items"></ul>
-    <button id="clear-cart-button" disabled>Remove All</button>
+    <button id="clear-cart-button" disabled>ניקוי הסל</button>
     <div id="cart-total"></div>
     <div id="cart-message">
-      <span>Add items to the cart and press the button to start a WhatsApp chat.</span>
-      <button id="whatsapp-chat-button">Start WhatsApp Chat</button>
+      <span>הוסף פריטים לסל ולחץ על הכפתור כדי להתחיל צ'אט WhatsApp.</span>
+      <button id="whatsapp-chat-button">WhatsApp Chat</button>
     </div>
   </div>
   <div id="categories" class="category-container">
-    <button class="category-btn" data-category="Category1">Category 1</button>
-    <button class="category-btn" data-category="Category2">Category 2</button>
-    <button class="category-btn" data-category="Category3">Category 3</button>
-    <button class="category-btn" data-category="Category4">Category 4</button>
-    <button class="category-btn" data-category="Category5">Category 5</button>
-    <button class="category-btn" data-category="All">All Items</button>
+    <button class="category-btn" data-category="ריהוט">ריהוט</button>
+    <button class="category-btn" data-category="מוצרים חשמלים">מוצרים חשמלים</button>
+    <button class="category-btn" data-category="מטבח">מטבח</button>
+    <button class="category-btn" data-category="אחר">אחר</button>
+    <button class="category-btn" data-category="חינם">חינם</button>
+    <button class="category-btn" data-category="All">כל הפיטים</button>
   </div>
   <div id="items"></div>
 
@@ -374,7 +375,7 @@
     <!-- Modal Caption (Image Text) -->
     <div id="caption"></div>
   </div>
-  <button id="scroll-to-top-btn" style="display: none;">↑ Top</button>
+  <button id="scroll-to-top-btn" style="display: none;">↑</button>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -464,7 +465,7 @@
               itemImageIndex = changeImage(item.images, img, 1, itemImageIndex);
             };
             const addButton = document.createElement('button');
-            addButton.textContent = 'Add to Cart';
+            addButton.textContent = 'הוספה';
             addButton.onclick = () => addToCart(item);
             imageContainer.appendChild(leftArrow);
             imageContainer.appendChild(rightArrow);
@@ -500,7 +501,7 @@
           cartItems.push({ ...item, quantity: 1 });
           renderCart();
         } else {
-          alert('Item already added to cart.');
+          alert('הפריט כבר נמצא בסל.');
         }
       }
 
@@ -517,14 +518,14 @@
           const li = document.createElement('li');
           li.textContent = `${item.name} - ₪${item.price.toFixed(2)} x ${item.quantity}`;
           const removeButton = document.createElement('button');
-          removeButton.textContent = 'Remove';
+          removeButton.textContent = 'ניקוי';
           removeButton.onclick = () => {
             removeFromCart(index);
           };
           li.appendChild(removeButton);
           cartItemsList.appendChild(li);
         });
-        cartTotalDiv.innerHTML = `<strong>Total: ₪${total.toFixed(2)}</strong>`;
+        cartTotalDiv.innerHTML = `<strong>סה״כ: ₪${total.toFixed(2)}</strong>`;
         updateClearCartButtonState();
         localStorage.setItem('cartItems', JSON.stringify(cartItems)); // Save current state to localStorage
       }
@@ -553,12 +554,12 @@
       // Define the startWhatsAppChat function here, at the global level
       window.startWhatsAppChat = function () {
         if (cartItems.length === 0) {
-          alert('Cart is empty. Please add items to the cart.');
+          alert('סל שלך רק. נה להוסיף פריטים');
           return;
         }
         let total = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
         const itemsMessage = cartItems.map(item => `${item.name} - ₪${item.price.toFixed(2)}`).join('%0A');
-        const message = `Items in my cart:%0A${itemsMessage}%0A%0ATotal: ₪${total.toFixed(2)}`;
+        const message = `פריטים בסל:%0A${itemsMessage}%0A%0Aסה״כ: ₪${total.toFixed(2)}`;
         const whatsappLink = `https://wa.me/972584433306?text=${message}`;
         window.open(whatsappLink, '_blank');
       }
