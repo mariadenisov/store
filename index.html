@@ -3,9 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Online Store</title>
   <style>
+    html,
+    body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     /* button {
       white-space: nowrap;
       /* Prevents the button text from wrapping */
@@ -282,6 +292,40 @@
       z-index: 100;
       /* Ensure it's above other elements */
     }
+
+    .category-container {
+      display: flex;
+      justify-content: space-between;
+      /* This will spread the buttons evenly */
+      padding: 0 10px;
+      /* Add padding on the sides if needed */
+    }
+
+    .category-btn {
+      flex-grow: 1;
+      /* This will allow the buttons to grow and take up equal space */
+      text-align: center;
+      /* Center the text inside buttons */
+      margin: 0 5px;
+      /* Optional: Adds space between buttons */
+      padding: 10px;
+      /* Adjust as needed */
+      font-size: calc(100% - 20px);
+      font-family: 'Arial', sans-serif;
+      /* Replace with your desired font */
+      font-size: 16px;
+      /* Replace with your desired size */
+      font-weight: bold;
+    }
+
+    @media (min-width: 600px) {
+      .category-btn {
+        padding: 15px;
+        /* Adjust as needed */
+        font-size: 16px;
+        /* Set a fixed font size for larger screens */
+      }
+    }
   </style>
 </head>
 
@@ -297,7 +341,7 @@
       <button id="whatsapp-chat-button">Start WhatsApp Chat</button>
     </div>
   </div>
-  <div id="categories">
+  <div id="categories" class="category-container">
     <button class="category-btn" data-category="Category1">Category 1</button>
     <button class="category-btn" data-category="Category2">Category 2</button>
     <button class="category-btn" data-category="Category3">Category 3</button>
@@ -443,12 +487,12 @@
       function addToCart(item) {
         const found = cartItems.some(cartItem => cartItem.name === item.name);
         if (!found) {
-            cartItems.push({ ...item, quantity: 1 });
-            renderCart();
+          cartItems.push({ ...item, quantity: 1 });
+          renderCart();
         } else {
-            alert('Item already added to cart.');
+          alert('Item already added to cart.');
         }
-    }
+      }
 
       function removeFromCart(index) {
         cartItems.splice(index, 1);
