@@ -20,6 +20,7 @@
   },
   {
     "name": "קופסת אוכל בנטו כפולה",
+    "description": " ",
     "price": 0.00,
     "images": [
       "images/launch_container.jpeg",
@@ -47,6 +48,7 @@
   },
   {
     "name": "מיכל לשתייה קרה עם ברז",
+    "description": " ",
     "price": 0.00,
     "images": [
       "images/water_dispenser.jpeg"
@@ -70,5 +72,81 @@
       "images/pie_dish.jpeg"
     ],
     "categories": ["מטבח", "חינם"]
+  },
+  {
+    "name": "תבנית אפייה 24 ס״מ",
+    "description": " ",
+    "price": 0.00,
+    "images": [
+      "images/baking_tray_24.jpeg"
+    ],
+    "categories": ["מטבח", "חינם"]
+  },
+  {
+    "name": "תבנית אפייה 28 ס״מ",
+    "description": " ",
+    "price": 0.00,
+    "images": [
+      "images/baking_tray_28.jpeg"
+    ],
+    "categories": ["מטבח", "חינם"]
+  },
+  {
+    "name": "סט תבניות אפייה",
+    "description": " ",
+    "price": 0.00,
+    "images": [
+      "images/set_baking.jpeg"
+    ],
+    "categories": ["מטבח", "חינם"]
+  },
+  {
+    "name": "אוהל זוגי The North Face Stormbreak 2",
+    "description": "<a href='https://pakalhagor.co.il/product/אוהל-זוגי-the-north-face-stormbreak/' target='_blank'>אוהל דו שכבתי מקצועי לטיולים אתגריים, עמיד בתנאי מזג אויר קיצוניים</a>",
+    "price": 500.00,
+    "images": [
+      "images/tent.jpeg",
+      "images/tent2.jpeg"
+    ],
+    "categories": ["אחר"]
+  },
+  {
+    "name": "צידנית 28.4 ליטר",
+    "description": "COLEMAN",
+    "price": 150.00,
+    "images": [
+      "images/coleman.jpeg",
+      "images/coleman2.jpeg"
+    ],
+    "categories": ["אחר"]
+  },
+  {
+    "name": "קולר איגלו 7.6 ליטר",
+    "description": " ",
+    "price": 80.00,
+    "images": [
+      "images/igloo.jpeg"
+    ],
+    "categories": ["אחר"]
+  },
+  {
+    "name": "צידנית 24 ליטר",
+    "description": " ",
+    "price": 0.00,
+    "images": [
+      "images/coolbox.jpeg"
+    ],
+    "categories": ["אחר", "חינם"]
+  },
+  {
+    "name": "מתלה מעילים MACKAPÄR",
+    "description": "<a href='https://www.ikea.com/il/he/p/mackapaer-coat-rack-with-shoe-storage-unit-white-50530988/' target='_blank'>מתלה מעילים עם יחידת אחסון לנעליים</a> ",
+    "price": 150.00,
+    "images": [
+      "images/MACKAPÄR.jpeg",
+      "images/MACKAPÄR2.jpeg",
+      "images/MACKAPÄR3.avif"
+    ],
+    "categories": ["ריהוט"]
   }
 ]
