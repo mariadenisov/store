@@ -381,7 +381,7 @@
       <button class="category-btn" data-category="מטבח">מטבח</button>
       <button class="category-btn" data-category="אחר">אחר</button>
       <button class="category-btn" data-category="חינם">חינם</button>
-      <button class="category-btn" data-category="All">כל הפיטים</button>
+      <button class="category-btn" data-category="All">כל הפריטים</button>
     </div>
     <div id="items"></div>
 
@@ -473,20 +473,27 @@
               imageContainer.appendChild(img);
               itemDiv.appendChild(imageContainer);
               itemDiv.appendChild(createTextElement('h2', item.name));
-              itemDiv.appendChild(createTextElement('p', item.description));
+              itemDiv.appendChild(createTextElement('p', item.description, true)); // Allow HTML in descriptions
               itemDiv.appendChild(createTextElement('p', `₪${item.price.toFixed(2)}`));
               const leftArrow = document.createElement('button');
               leftArrow.innerHTML = '&#8678;';
               leftArrow.classList.add('arrow', 'left-arrow');
-              leftArrow.onclick = () => {
-                itemImageIndex = changeImage(item.images, img, -1, itemImageIndex);
-              };
               const rightArrow = document.createElement('button');
               rightArrow.innerHTML = '&#8680;';
               rightArrow.classList.add('arrow', 'right-arrow');
-              rightArrow.onclick = () => {
-                itemImageIndex = changeImage(item.images, img, 1, itemImageIndex);
-              };
+              if (item.images.length <= 1) {
+                leftArrow.classList.add('hidden');
+                rightArrow.classList.add('hidden');
+              } else {
+                leftArrow.classList.remove('hidden');
+                rightArrow.classList.remove('hidden');
+                leftArrow.onclick = () => {
+                  itemImageIndex = changeImage(item.images, img, -1, itemImageIndex);
+                };
+                rightArrow.onclick = () => {
+                  itemImageIndex = changeImage(item.images, img, 1, itemImageIndex);
+                };
+              }
               const addButton = document.createElement('button');
               addButton.textContent = 'הוספה';
               addButton.onclick = () => addToCart(item);
@@ -500,7 +507,9 @@
                 updateModalImage();
                 modal.style.display = "block";
                 // Hide the blue arrow buttons when the modal is opened
-                document.querySelectorAll('.item .arrow').forEach(button => button.classList.add('hidden'));
+                document.querySelectorAll('.item .arrow').forEach(button => {
+                  button.classList.toggle('hidden', item.images.length <= 1);
+                });
               };
             });
         }
@@ -512,9 +521,13 @@
           return indexRef; // Return the updated index
         }
 
-        function createTextElement(tag, text) {
+        function createTextElement(tag, text, isHTML = false) {
           const element = document.createElement(tag);
-          element.textContent = text;
+          if (isHTML) {
+            element.innerHTML = text; // Allows HTML tags within text
+          } else {
+            element.textContent = text; // Standard text without HTML
+          }
           return element;
         }
 
