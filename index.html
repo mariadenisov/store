@@ -58,8 +58,15 @@
     .modal-content {
       margin: auto;
       display: block;
-      width: 80%;
+      /* width: 80%; */
+      width: auto;
+      /* Auto width to maintain image aspect ratio */
       max-width: 700px;
+      /* Maximum width but can be smaller */
+      max-height: 80%;
+      /* Limits the height to the viewport */
+      object-fit: contain;
+      /* Ensures no cropping, image is fully contained within the element */
     }
 
     /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -119,13 +126,24 @@
     }
 
     .image-container {
-      position: relative;
       width: 100%;
+      height: 300px;
+      /* Fixed height for all images on the main page */
+      overflow: hidden;
+      /* Hide parts of the image that exceed this container */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* Center the image in the container */
     }
 
     .item img {
-      width: 100%;
-      border-radius: 8px;
+      width: auto;
+      height: 100%;
+      min-width: 100%;
+      /* Ensures the image covers the container width */
+      object-fit: cover;
+      /* Cover the container, may crop the image */
     }
 
     .arrow {
@@ -350,7 +368,7 @@
     <div id="cart">
       <h2>הסל שלי</h2>
       <ul id="cart-items"></ul>
-      <button id="clear-cart-button" disabled>ניקוי הסל</button>
+      <button id="clear-cart-button" disabled>הסר הכל</button>
       <div id="cart-total"></div>
       <div id="cart-message">
         <span>הוסף פריטים לסל ולחץ על הכפתור כדי להתחיל צ'אט WhatsApp.</span>
@@ -523,7 +541,7 @@
             const li = document.createElement('li');
             li.textContent = `${item.name} - ₪${item.price.toFixed(2)} x ${item.quantity}`;
             const removeButton = document.createElement('button');
-            removeButton.textContent = 'ניקוי';
+            removeButton.textContent = 'הסר';
             removeButton.onclick = () => {
               removeFromCart(index);
             };

@@ -4,9 +4,10 @@
     "description": "מיקסר קומפקטי קנווד KM280",
     "price": 300.00,
     "images": [
-      "images/mixer.jpg"
+      "images/mixer.jpeg",
+      "images/mixer2.JPG"
     ],
-    "categories": ["ריהוט", "מוצרים חשמלים"]
+    "categories": ["מטבח", "מוצרים חשמלים"]
   },
   {
     "name": "Item 2",
