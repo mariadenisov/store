@@ -1,11 +1,10 @@
 [
   {
-    "name": "Item 1",
-    "description": "Description of Item 1",
-    "price": 25.00,
+    "name": "מיקסר KENWOOD KM280",
+    "description": "מיקסר קומפקטי קנווד KM280",
+    "price": 300.00,
     "images": [
-      "images/TV1.jpg",
-      "images/TV2.jpg"
+      "images/mixer.jpg"
     ],
     "categories": ["ריהוט", "מוצרים חשמלים"]
   },
