@@ -310,11 +310,32 @@
   },
   {
     "name": "קסדות DECATHLON",
+    "description": "קסדה כתומה - 55-59 ס׳׳מ, קסדה כחולה - 50-54 ס׳׳מ",
+    "price": 0.00,
+    "images": [
+      "images/helmet.jpeg",
+      "images/helmet2.jpeg",
+      "images/helmet3.jpeg"
+    ],
+    "categories": ["אחר", "חינם"]
+  },
+  {
+    "name": "מחצלת",
     "description": "",
     "price": 0.00,
     "images": [
-      "images/water_bag.jpeg"
+      "images/mat.jpeg"
     ],
-    "categories": ["טיולים, על האש"]
+    "categories": ["טיולים, על האש", "חינם"]
+  },
+  {
+    "name": "מנורת תלייה (איקאה)",
+    "description": "",
+    "price": 0.00,
+    "images": [
+      "images/lamp.jpeg",
+      "images/lamp2.jpeg"
+    ],
+    "categories": ["אחר", "חינם"]
   }
 ]
