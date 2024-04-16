@@ -272,10 +272,48 @@
   },
   {
     "name": "גזיה עם מצת Primus Express Stove",
-    "description": "<a href='https://pakalhagor.co.il/product/גזייה-עם-מצת-primus-stove/>הגזייה מיועדת למיכלי הברגה</a>",
+    "description": "<a href='https://pakalhagor.co.il/product/גזייה-עם-מצת-primus-stove/'>הגזייה מיועדת למיכלי הברגה</a>",
     "price": 100.00,
     "images": [
       "images/primus.jpeg"
+    ],
+    "categories": ["טיולים, על האש"]
+  },
+  {
+    "name": "מזרן מתנפח - 2 יחידות",
+    "description": "<a href='https://pakalhagor.co.il/product/מזרן-מתנפח-דגם-klymit-insulated-static-v-lite/'>מזרן מתנפח דגם Klymit Insulated Static V Lite</a>",
+    "price": 500.00,
+    "images": [
+      "images/klymit.jpeg",
+      "images/klymit2.webp"
+    ],
+    "categories": ["טיולים, על האש"]
+  },
+  {
+    "name": "סט סירי טיטניום",
+    "description": "<a href='https://www.aliexpress.com/item/32861708317.html?srcSns=sns_Copy&spreadType=socialShare&bizType=ProductDetail&social_params=6000087397072&aff_fcid=fd4764d798c644f5abd6a7a97b49db83-1713283623492-09269-_onJMHOw&tt=MG&aff_fsk=_onJMHOw&aff_platform=default&sk=_onJMHOw&aff_trace_key=fd4764d798c644f5abd6a7a97b49db83-1713283623492-09269-_onJMHOw&shareId=6000087397072&businessType=ProductDetail&platform=AE&terminal_id=1617246300e04dec8df7c24dbf7b9a3d&afSmartRedirect=y'>1000 מל, 500 מל</a>",
+    "price": 0.00,
+    "images": [
+      "images/pot_set.jpeg",
+      "images/pot_set2.jpeg"
+    ],
+    "categories": ["טיולים, על האש", "חינם"]
+  },
+  {
+    "name": "מנשא מים גמיש 3 ליטר Source Widepac",
+    "description": "<a href='https://pakalhagor.co.il/product/מנשא-מים-גמיש-3-ליטר-source-widepac/>2 יחידות</a>",
+    "price": 50.00,
+    "images": [
+      "images/water_bag.jpeg"
+    ],
+    "categories": ["טיולים, על האש"]
+  },
+  {
+    "name": "קסדות DECATHLON",
+    "description": "",
+    "price": 0.00,
+    "images": [
+      "images/water_bag.jpeg"
     ],
     "categories": ["טיולים, על האש"]
   }
