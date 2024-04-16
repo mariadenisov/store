@@ -108,7 +108,7 @@
       "images/tent.jpeg",
       "images/tent2.jpeg"
     ],
-    "categories": ["אחר"]
+    "categories": ["טיולים, על האש"]
   },
   {
     "name": "צידנית 28.4 ליטר",
@@ -118,7 +118,7 @@
       "images/coleman.jpeg",
       "images/coleman2.jpeg"
     ],
-    "categories": ["אחר"]
+    "categories": ["טיולים, על האש"]
   },
   {
     "name": "קולר איגלו 7.6 ליטר",
@@ -127,7 +127,7 @@
     "images": [
       "images/igloo.jpeg"
     ],
-    "categories": ["אחר"]
+    "categories": ["טיולים, על האש"]
   },
   {
     "name": "צידנית 24 ליטר",
@@ -136,7 +136,7 @@
     "images": [
       "images/coolbox.jpeg"
     ],
-    "categories": ["אחר", "חינם"]
+    "categories": ["טיולים, על האש", "חינם"]
   },
   {
     "name": "מתלה מעילים MACKAPÄR",
@@ -148,5 +148,135 @@
       "images/MACKAPÄR3.avif"
     ],
     "categories": ["ריהוט"]
+  },
+  {
+    "name": "מקדחה Makita HP1641",
+    "description": " ",
+    "price": 200.00,
+    "images": [
+      "images/makita.jpeg",
+      "images/makita2.jpeg"
+    ],
+    "categories": ["אחר"]
+  },
+  {
+    "name": "כירת גז ניידת",
+    "description": "כולל גז",
+    "price": 0.00,
+    "images": [
+      "images/gas_stove.jpeg"
+    ],
+    "categories": ["טיולים, על האש", "חינם"]
+  },
+  {
+    "name": "כוסות יין",
+    "description": "6 יחידות. חדש",
+    "price": 0.00,
+    "images": [
+      "images/wine_glass.jpeg"
+    ],
+    "categories": ["מטבח", "חינם"]
+  },
+  {
+    "name": "שולחן אלומיניום מתקפל",
+    "description": "<a href='https://www.tiul.net/items/2184951-שולחן-אלומיניום-מתקפל-לקמפינג-ולשטח-קטן-דגם-360-coleman' target='_blank'>שולחן אלומיניום מתקפל לקמפינג ולשטח קטן דגם 360</a>",
+    "price": 100.00,
+    "images": [
+      "images/picnik_table.jpeg", 
+      "images/picnik_table2.jpeg"
+    ],
+    "categories": ["טיולים, על האש"]
+  },
+  {
+    "name": "תיק גב 60 ליטר (DECATHLON)",
+    "description": "<a href='https://www.decathlon.in/p/8300843/travel-and-trekking-backpack/travel-backpack-forclaz-60l-blue?id=8300843&type=p' target='_blank'>תיק גב לטיולים 60 ליטר - כחול</a>",
+    "price": 100.00,
+    "images": [
+      "images/backpack_60.jpeg"
+    ],
+    "categories": ["טיולים, על האש"]
+  },
+  {
+    "name": "תיק גב 40+5 ליטר",
+    "description": "תיק גב לטיולים",
+    "price": 0.00,
+    "images": [
+      "images/backpack_pink.jpeg"
+    ],
+    "categories": ["טיולים, על האש", "חינם"]
+  },
+  {
+    "name": "קופסת אוכל לטיול",
+    "description": "<a href='https://www.wildo.se/camp-a-box-duo-light/'>קופסת אוכל לטיולים של חברת WILDO</a>",
+    "price": 0.00,
+    "images": [
+      "images/camp-box.jpeg"
+    ],
+    "categories": ["טיולים, על האש", "חינם"]
+  },
+  {
+    "name": "כיסאות קמפינג מתקפל",
+    "description": "<a href='https://www.hagorshops.co.il/קטלוג-מוצרים-חגור-שופס/כיסא-קמפינג-מתקפל-קולמן-coleman/'>2 כיסאות. חברת קולמן</a>",
+    "price": 200.00,
+    "images": [
+      "images/camping_chair.jpeg"
+    ],
+    "categories": ["טיולים, על האש"]
+  },
+  {
+    "name": "אביזרים לעל האש",
+    "description": "",
+    "price": 0.00,
+    "images": [
+      "images/bbq_set.jpeg"
+    ],
+    "categories": ["טיולים, על האש", "חינם"]
+  },
+  {
+    "name": "כבל התנעה לרכב",
+    "description": "",
+    "price": 0.00,
+    "images": [
+      "images/cable_car.jpeg"
+    ],
+    "categories": ["אחר", "חינם"]
+  },
+  {
+    "name": "כרית ראש פרימיום Sea to Summit Aeros Premium Pillow",
+    "description": "<a href='https://seatosummit.com/products/aeros-pillow-premium?variant=19522655158375'>2 כריות מתנפחות. מידה Large. חברה Sea to Summit</a>",
+    "price": 300.00,
+    "images": [
+      "images/pillows.jpeg",
+      "images/pillows2.webp"
+    ],
+    "categories": ["טיולים, על האש"]
+  },
+  {
+    "name": "עץ למדורה",
+    "description": "",
+    "price": 0.00,
+    "images": [
+      "images/wood.jpeg",
+      "images/wood2.jpeg"
+    ],
+    "categories": ["טיולים, על האש", "חינם"]
+  },
+  {
+    "name": "פחם למנגל",
+    "description": "",
+    "price": 0.00,
+    "images": [
+      "images/charcoal.jpeg"
+    ],
+    "categories": ["טיולים, על האש", "חינם"]
+  },
+  {
+    "name": "גזיה עם מצת Primus Express Stove",
+    "description": "<a href='https://pakalhagor.co.il/product/גזייה-עם-מצת-primus-stove/>הגזייה מיועדת למיכלי הברגה</a>",
+    "price": 100.00,
+    "images": [
+      "images/primus.jpeg"
+    ],
+    "categories": ["טיולים, על האש"]
   }
 ]
