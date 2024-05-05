@@ -115,15 +115,6 @@
     "categories": ["טיולים, על האש"]
   },
   {
-    "name": "תיק גב 40+5 ליטר",
-    "description": "תיק גב לטיולים",
-    "price": 0.00,
-    "images": [
-      "images/backpack_pink.jpeg"
-    ],
-    "categories": ["טיולים, על האש", "חינם"]
-  },
-  {
     "name": "קופסת אוכל לטיול",
     "description": "<a href='https://www.wildo.se/camp-a-box-duo-light/'>קופסת אוכל לטיולים של חברת WILDO</a>",
     "price": 0.00,
