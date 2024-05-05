@@ -19,24 +19,6 @@
     "categories": ["מטבח", "מוצרי חשמל"]
   },
   {
-    "name": "כוסות מרטיני",
-    "description": "כוסות מרטיני - 6 יחידות",
-    "price": 0.00,
-    "images": [
-      "images/martini.jpeg"
-    ],
-    "categories": ["מטבח", "חינם"]
-  },
-  {
-    "name": "תבנית פאי (איקאה)",
-    "description": "גובה - 4 ס״מ, קוטר - 32 ס״מ",
-    "price": 0.00,
-    "images": [
-      "images/pie_dish.jpeg"
-    ],
-    "categories": ["מטבח", "חינם"]
-  },
-  {
     "name": "אוהל זוגי The North Face Stormbreak 2",
     "description": "<a href='https://pakalhagor.co.il/product/אוהל-זוגי-the-north-face-stormbreak/' target='_blank'>אוהל דו שכבתי מקצועי לטיולים אתגריים, עמיד בתנאי מזג אויר קיצוניים</a>",
     "price": 500.00,
@@ -75,25 +57,6 @@
       "images/MACKAPÄR3.avif"
     ],
     "categories": ["ריהוט"]
-  },
-  {
-    "name": "מקדחה Makita HP1641",
-    "description": " ",
-    "price": 200.00,
-    "images": [
-      "images/makita.jpeg",
-      "images/makita2.jpeg"
-    ],
-    "categories": ["אחר"]
-  },
-  {
-    "name": "כוסות יין",
-    "description": "6 יחידות. חדש",
-    "price": 0.00,
-    "images": [
-      "images/wine_glass.jpeg"
-    ],
-    "categories": ["מטבח", "חינם"]
   },
   {
     "name": "שולחן אלומיניום מתקפל",
