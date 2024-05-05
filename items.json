@@ -10,15 +10,6 @@
     "categories": ["מטבח", "מוצרי חשמל"]
   },
   {
-    "name": "קוצץ מזון חשמלי Sauter",
-    "description": "קוצץ מזון חשמלי <br> <a href='https://www.4chef.co.il/חנות/קוצץ-מזון-חשמלי-sauter/' target='_blank'>Sauter דגם SC401</a>",
-    "price": 50.00,
-    "images": [
-      "images/sauter.jpeg"
-    ],
-    "categories": ["מטבח", "מוצרי חשמל"]
-  },
-  {
     "name": "אוהל זוגי The North Face Stormbreak 2",
     "description": "<a href='https://pakalhagor.co.il/product/אוהל-זוגי-the-north-face-stormbreak/' target='_blank'>אוהל דו שכבתי מקצועי לטיולים אתגריים, עמיד בתנאי מזג אויר קיצוניים</a>",
     "price": 500.00,
@@ -169,16 +160,6 @@
     "price": 0.00,
     "images": [
       "images/burger.jpeg"
-    ],
-    "categories": ["חינם", "מטבח"]
-  },
-  {
-    "name": "כלי לסופלה (איקאה)",
-    "description": "גובה - 6 סמ, קוטר - 11 סמ",
-    "price": 0.00,
-    "images": [
-      "images/sufle.jpeg",
-      "images/sufle2.jpeg"
     ],
     "categories": ["חינם", "מטבח"]
   },
