@@ -7,7 +7,7 @@
       "images/mixer.jpeg",
       "images/mixer2.JPG"
     ],
-    "categories": ["מטבח", "מוצרים חשמלים"]
+    "categories": ["מטבח", "מוצרי חשמל"]
   },
   {
     "name": "קוצץ מזון חשמלי Sauter",
@@ -16,7 +16,7 @@
     "images": [
       "images/sauter.jpeg"
     ],
-    "categories": ["מטבח", "מוצרים חשמלים"]
+    "categories": ["מטבח", "מוצרי חשמל"]
   },
   {
     "name": "קופסת אוכל בנטו כפולה",
@@ -233,15 +233,6 @@
     "categories": ["טיולים, על האש", "חינם"]
   },
   {
-    "name": "כבל התנעה לרכב",
-    "description": "",
-    "price": 0.00,
-    "images": [
-      "images/cable_car.jpeg"
-    ],
-    "categories": ["אחר", "חינם"]
-  },
-  {
     "name": "כרית ראש פרימיום Sea to Summit Aeros Premium Pillow",
     "description": "<a href='https://seatosummit.com/products/aeros-pillow-premium?variant=19522655158375'>2 כריות מתנפחות. מידה Large. חברה Sea to Summit</a>",
     "price": 300.00,
@@ -271,7 +262,7 @@
     "categories": ["טיולים, על האש", "חינם"]
   },
   {
-    "name": "גזיה עם מצת Primus Express Stove",
+    "name": "גזיה Primus Express Stove",
     "description": "<a href='https://pakalhagor.co.il/product/גזייה-עם-מצת-primus-stove/'>הגזייה מיועדת למיכלי הברגה</a>",
     "price": 100.00,
     "images": [
@@ -337,5 +328,107 @@
       "images/lamp2.jpeg"
     ],
     "categories": ["אחר", "חינם"]
+  },
+  {
+    "name": "אביזרים לאפיה",
+    "description": "",
+    "price": 0.00,
+    "images": [
+      "images/for_baking.jpeg"
+    ],
+    "categories": ["מטבח", "חינם"]
+  },
+  {
+    "name": "מעמד למחשב נייד",
+    "description": "",
+    "price": 0.00,
+    "images": [
+      "images/ÖJULF.jpeg",
+      "images/ÖJULF2.jpeg"
+    ],
+    "categories": ["אחר", "חינם"]
+  },
+  {
+    "name": "פח אשפה (איקאה)",
+    "description": "",
+    "price": 0.00,
+    "images": [
+      "images/trash_bin.jpeg",
+      "images/trash_bin2.jpeg"
+    ],
+    "categories": ["אחר", "חינם", "מטבח"]
+  },
+  {
+    "name": "שייקר להכנת קוקטיילים כולל אביזרים",
+    "description": "",
+    "price": 0.00,
+    "images": [
+      "images/shaker.jpeg"
+    ],
+    "categories": ["חינם", "מטבח"]
+  },
+  {
+    "name": "קופסת אחסון לעשבי תיבול",
+    "description": "<a href='https://prepara.com/products/herb-savor-eco#details'>קופסת אחסון לעשבי תיבול</a>",
+    "price": 0.00,
+    "images": [
+      "images/herb_savor.jpeg"
+    ],
+    "categories": ["חינם", "מטבח"]
+  },
+  {
+    "name": "תבנית להכנת המבורגר",
+    "description": "קוטר - 12 סמ",
+    "price": 0.00,
+    "images": [
+      "images/burger.jpeg"
+    ],
+    "categories": ["חינם", "מטבח"]
+  },
+  {
+    "name": "כלי לסופלה (איקאה)",
+    "description": "גובה - 6 סמ, קוטר - 11 סמ",
+    "price": 0.00,
+    "images": [
+      "images/sufle.jpeg",
+      "images/sufle2.jpeg"
+    ],
+    "categories": ["חינם", "מטבח"]
+  },
+  {
+    "name": "ספלים לאספרסו (לבנים)",
+    "description": "",
+    "price": 0.00,
+    "images": [
+      "images/espresso_cup_white.jpeg"
+    ],
+    "categories": ["חינם", "מטבח"]
+  },
+  {
+    "name": "ספלים BAENS",
+    "description": "",
+    "price": 0.00,
+    "images": [
+      "images/cup_beans.jpeg"
+    ],
+    "categories": ["חינם", "מטבח"]
+  },
+  {
+    "name": "ספלים לאספרסו",
+    "description": "",
+    "price": 0.00,
+    "images": [
+      "images/espresso_cups.jpeg"
+    ],
+    "categories": ["חינם", "מטבח"]
+  },
+  {
+    "name": "שייקר לאבקת חלבון",
+    "description": "",
+    "price": 0.00,
+    "images": [
+      "images/proteinshaker.jpeg"
+    ],
+    "categories": ["חינם", "מטבח"]
   }
 ]
