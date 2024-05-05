@@ -19,16 +19,6 @@
     "categories": ["מטבח", "מוצרי חשמל"]
   },
   {
-    "name": "קופסת אוכל בנטו כפולה",
-    "description": " ",
-    "price": 0.00,
-    "images": [
-      "images/launch_container.jpeg",
-      "images/lunch_container2.jpeg"
-    ],
-    "categories": ["מטבח", "אחר", "חינם"]
-  },
-  {
     "name": "כוסות מרטיני",
     "description": "כוסות מרטיני - 6 יחידות",
     "price": 0.00,
@@ -38,65 +28,11 @@
     "categories": ["מטבח", "חינם"]
   },
   {
-    "name": "ברנר ביתי למטבח",
-    "description": "כולל גז למילוי. היה בשימוש פעם אחד",
-    "price": 30.00,
-    "images": [
-      "images/kitchen_lighter.jpeg"
-    ],
-    "categories": ["מטבח"]
-  },
-  {
-    "name": "מיכל לשתייה קרה עם ברז",
-    "description": " ",
-    "price": 0.00,
-    "images": [
-      "images/water_dispenser.jpeg"
-    ],
-    "categories": ["מטבח", "חינם"]
-  },
-  {
-    "name": "כוסות טרמית",
-    "description": "2 יחידות, 320 מל",
-    "price": 0.00,
-    "images": [
-      "images/thermal_cup.jpeg"
-    ],
-    "categories": ["מטבח", "חינם"]
-  },
-  {
     "name": "תבנית פאי (איקאה)",
     "description": "גובה - 4 ס״מ, קוטר - 32 ס״מ",
     "price": 0.00,
     "images": [
       "images/pie_dish.jpeg"
-    ],
-    "categories": ["מטבח", "חינם"]
-  },
-  {
-    "name": "תבנית אפייה 24 ס״מ",
-    "description": " ",
-    "price": 0.00,
-    "images": [
-      "images/baking_tray_24.jpeg"
-    ],
-    "categories": ["מטבח", "חינם"]
-  },
-  {
-    "name": "תבנית אפייה 28 ס״מ",
-    "description": " ",
-    "price": 0.00,
-    "images": [
-      "images/baking_tray_28.jpeg"
-    ],
-    "categories": ["מטבח", "חינם"]
-  },
-  {
-    "name": "סט תבניות אפייה",
-    "description": " ",
-    "price": 0.00,
-    "images": [
-      "images/set_baking.jpeg"
     ],
     "categories": ["מטבח", "חינם"]
   },
@@ -130,15 +66,6 @@
     "categories": ["טיולים, על האש"]
   },
   {
-    "name": "צידנית 24 ליטר",
-    "description": " ",
-    "price": 0.00,
-    "images": [
-      "images/coolbox.jpeg"
-    ],
-    "categories": ["טיולים, על האש", "חינם"]
-  },
-  {
     "name": "מתלה מעילים MACKAPÄR",
     "description": "<a href='https://www.ikea.com/il/he/p/mackapaer-coat-rack-with-shoe-storage-unit-white-50530988/' target='_blank'>מתלה מעילים עם יחידת אחסון לנעליים</a> ",
     "price": 150.00,
@@ -158,15 +85,6 @@
       "images/makita2.jpeg"
     ],
     "categories": ["אחר"]
-  },
-  {
-    "name": "כירת גז ניידת",
-    "description": "כולל גז",
-    "price": 0.00,
-    "images": [
-      "images/gas_stove.jpeg"
-    ],
-    "categories": ["טיולים, על האש", "חינם"]
   },
   {
     "name": "כוסות יין",
@@ -224,15 +142,6 @@
     "categories": ["טיולים, על האש"]
   },
   {
-    "name": "אביזרים לעל האש",
-    "description": "",
-    "price": 0.00,
-    "images": [
-      "images/bbq_set.jpeg"
-    ],
-    "categories": ["טיולים, על האש", "חינם"]
-  },
-  {
     "name": "כרית ראש פרימיום Sea to Summit Aeros Premium Pillow",
     "description": "<a href='https://seatosummit.com/products/aeros-pillow-premium?variant=19522655158375'>2 כריות מתנפחות. מידה Large. חברה Sea to Summit</a>",
     "price": 300.00,
@@ -249,15 +158,6 @@
     "images": [
       "images/wood.jpeg",
       "images/wood2.jpeg"
-    ],
-    "categories": ["טיולים, על האש", "חינם"]
-  },
-  {
-    "name": "פחם למנגל",
-    "description": "",
-    "price": 0.00,
-    "images": [
-      "images/charcoal.jpeg"
     ],
     "categories": ["טיולים, על האש", "חינם"]
   },
@@ -300,26 +200,6 @@
     "categories": ["טיולים, על האש"]
   },
   {
-    "name": "קסדות DECATHLON",
-    "description": "קסדה כתומה - 55-59 ס׳׳מ, קסדה כחולה - 50-54 ס׳׳מ",
-    "price": 0.00,
-    "images": [
-      "images/helmet.jpeg",
-      "images/helmet2.jpeg",
-      "images/helmet3.jpeg"
-    ],
-    "categories": ["אחר", "חינם"]
-  },
-  {
-    "name": "מחצלת",
-    "description": "",
-    "price": 0.00,
-    "images": [
-      "images/mat.jpeg"
-    ],
-    "categories": ["טיולים, על האש", "חינם"]
-  },
-  {
     "name": "מנורת תלייה (איקאה)",
     "description": "",
     "price": 0.00,
@@ -328,53 +208,6 @@
       "images/lamp2.jpeg"
     ],
     "categories": ["אחר", "חינם"]
-  },
-  {
-    "name": "אביזרים לאפיה",
-    "description": "",
-    "price": 0.00,
-    "images": [
-      "images/for_baking.jpeg"
-    ],
-    "categories": ["מטבח", "חינם"]
-  },
-  {
-    "name": "מעמד למחשב נייד",
-    "description": "",
-    "price": 0.00,
-    "images": [
-      "images/ÖJULF.jpeg",
-      "images/ÖJULF2.jpeg"
-    ],
-    "categories": ["אחר", "חינם"]
-  },
-  {
-    "name": "פח אשפה (איקאה)",
-    "description": "",
-    "price": 0.00,
-    "images": [
-      "images/trash_bin.jpeg",
-      "images/trash_bin2.jpeg"
-    ],
-    "categories": ["אחר", "חינם", "מטבח"]
-  },
-  {
-    "name": "שייקר להכנת קוקטיילים כולל אביזרים",
-    "description": "",
-    "price": 0.00,
-    "images": [
-      "images/shaker.jpeg"
-    ],
-    "categories": ["חינם", "מטבח"]
-  },
-  {
-    "name": "קופסת אחסון לעשבי תיבול",
-    "description": "<a href='https://prepara.com/products/herb-savor-eco#details'>קופסת אחסון לעשבי תיבול</a>",
-    "price": 0.00,
-    "images": [
-      "images/herb_savor.jpeg"
-    ],
-    "categories": ["חינם", "מטבח"]
   },
   {
     "name": "תבנית להכנת המבורגר",
@@ -401,15 +234,6 @@
     "price": 0.00,
     "images": [
       "images/espresso_cup_white.jpeg"
-    ],
-    "categories": ["חינם", "מטבח"]
-  },
-  {
-    "name": "ספלים BAENS",
-    "description": "",
-    "price": 0.00,
-    "images": [
-      "images/cup_beans.jpeg"
     ],
     "categories": ["חינם", "מטבח"]
   },
