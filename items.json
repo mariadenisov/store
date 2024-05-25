@@ -183,7 +183,7 @@
     "images": [
       "images/table_lamp.jpeg"
     ],
-    "categories": ["אחר", "חינם"]
+    "categories": ["מוצרי חשמל", "חינם"]
   },
   {
     "name": "מערוך מתכוונן",
@@ -239,7 +239,7 @@
     "images": [
       "images/BaByliss.jpeg"
     ],
-    "categories": ["אחר", "חינם"]
+    "categories": ["מוצרי חשמל", "חינם"]
   },
   {
     "name": "מגש הגשה לפיצה מעץ עבה",
@@ -323,6 +323,15 @@
       "images/bbq2.jpeg",
       "images/bbq3.jpeg"
     ],
-    "categories": ["אחר", "חינם"]
+    "categories": ["טיולים, על האש", "חינם"]
+  },
+  {
+    "name": "קערה",
+    "description": "",
+    "price": 0.00,
+    "images": [
+      "images/basket.jpeg"
+    ],
+    "categories": ["מטבח", "חינם"]
   }
 ]
