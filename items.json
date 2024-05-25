@@ -1,55 +1,5 @@
 [
   {
-    "name": "מיקסר KENWOOD KM280",
-    "description": "מיקסר קומפקטי קנווד KM280",
-    "price": 300.00,
-    "images": [
-      "images/mixer.jpeg",
-      "images/mixer2.JPG"
-    ],
-    "categories": ["מטבח", "מוצרי חשמל"]
-  },
-  {
-    "name": "אוהל זוגי The North Face Stormbreak 2",
-    "description": "<a href='https://pakalhagor.co.il/product/אוהל-זוגי-the-north-face-stormbreak/' target='_blank'>אוהל דו שכבתי מקצועי לטיולים אתגריים, עמיד בתנאי מזג אויר קיצוניים</a>",
-    "price": 500.00,
-    "images": [
-      "images/tent.jpeg",
-      "images/tent2.jpeg"
-    ],
-    "categories": ["טיולים, על האש"]
-  },
-  {
-    "name": "צידנית 28.4 ליטר",
-    "description": "COLEMAN",
-    "price": 150.00,
-    "images": [
-      "images/coleman.jpeg",
-      "images/coleman2.jpeg"
-    ],
-    "categories": ["טיולים, על האש"]
-  },
-  {
-    "name": "קולר איגלו 7.6 ליטר",
-    "description": " ",
-    "price": 80.00,
-    "images": [
-      "images/igloo.jpeg"
-    ],
-    "categories": ["טיולים, על האש"]
-  },
-  {
-    "name": "מתלה מעילים MACKAPÄR",
-    "description": "<a href='https://www.ikea.com/il/he/p/mackapaer-coat-rack-with-shoe-storage-unit-white-50530988/' target='_blank'>מתלה מעילים עם יחידת אחסון לנעליים</a> ",
-    "price": 150.00,
-    "images": [
-      "images/MACKAPÄR.jpeg",
-      "images/MACKAPÄR2.jpeg",
-      "images/MACKAPÄR3.avif"
-    ],
-    "categories": ["ריהוט"]
-  },
-  {
     "name": "שולחן אלומיניום מתקפל",
     "description": "<a href='https://www.tiul.net/items/2184951-שולחן-אלומיניום-מתקפל-לקמפינג-ולשטח-קטן-דגם-360-coleman' target='_blank'>שולחן אלומיניום מתקפל לקמפינג ולשטח קטן דגם 360</a>",
     "price": 100.00,
@@ -58,24 +8,6 @@
       "images/picnik_table2.jpeg"
     ],
     "categories": ["טיולים, על האש"]
-  },
-  {
-    "name": "תיק גב 60 ליטר (DECATHLON)",
-    "description": "<a href='https://www.decathlon.in/p/8300843/travel-and-trekking-backpack/travel-backpack-forclaz-60l-blue?id=8300843&type=p' target='_blank'>תיק גב לטיולים 60 ליטר - כחול</a>",
-    "price": 100.00,
-    "images": [
-      "images/backpack_60.jpeg"
-    ],
-    "categories": ["טיולים, על האש"]
-  },
-  {
-    "name": "קופסת אוכל לטיול",
-    "description": "<a href='https://www.wildo.se/camp-a-box-duo-light/'>קופסת אוכל לטיולים של חברת WILDO</a>",
-    "price": 0.00,
-    "images": [
-      "images/camp-box.jpeg"
-    ],
-    "categories": ["טיולים, על האש", "חינם"]
   },
   {
     "name": "כיסאות קמפינג מתקפל",
@@ -87,26 +19,6 @@
     "categories": ["טיולים, על האש"]
   },
   {
-    "name": "כרית ראש פרימיום Sea to Summit Aeros Premium Pillow",
-    "description": "<a href='https://seatosummit.com/products/aeros-pillow-premium?variant=19522655158375'>2 כריות מתנפחות. מידה Large. חברה Sea to Summit</a>",
-    "price": 300.00,
-    "images": [
-      "images/pillows.jpeg",
-      "images/pillows2.webp"
-    ],
-    "categories": ["טיולים, על האש"]
-  },
-  {
-    "name": "עץ למדורה",
-    "description": "",
-    "price": 0.00,
-    "images": [
-      "images/wood.jpeg",
-      "images/wood2.jpeg"
-    ],
-    "categories": ["טיולים, על האש", "חינם"]
-  },
-  {
     "name": "גזיה Primus Express Stove",
     "description": "<a href='https://pakalhagor.co.il/product/גזייה-עם-מצת-primus-stove/'>הגזייה מיועדת למיכלי הברגה</a>",
     "price": 100.00,
@@ -116,52 +28,13 @@
     "categories": ["טיולים, על האש"]
   },
   {
-    "name": "מזרן מתנפח - 2 יחידות",
-    "description": "<a href='https://pakalhagor.co.il/product/מזרן-מתנפח-דגם-klymit-insulated-static-v-lite/'>מזרן מתנפח דגם Klymit Insulated Static V Lite</a>",
-    "price": 500.00,
-    "images": [
-      "images/klymit.jpeg",
-      "images/klymit2.webp"
-    ],
-    "categories": ["טיולים, על האש"]
-  },
-  {
-    "name": "סט סירי טיטניום",
-    "description": "<a href='https://www.aliexpress.com/item/32861708317.html?srcSns=sns_Copy&spreadType=socialShare&bizType=ProductDetail&social_params=6000087397072&aff_fcid=fd4764d798c644f5abd6a7a97b49db83-1713283623492-09269-_onJMHOw&tt=MG&aff_fsk=_onJMHOw&aff_platform=default&sk=_onJMHOw&aff_trace_key=fd4764d798c644f5abd6a7a97b49db83-1713283623492-09269-_onJMHOw&shareId=6000087397072&businessType=ProductDetail&platform=AE&terminal_id=1617246300e04dec8df7c24dbf7b9a3d&afSmartRedirect=y'>1000 מל, 500 מל</a>",
-    "price": 0.00,
-    "images": [
-      "images/pot_set.jpeg",
-      "images/pot_set2.jpeg"
-    ],
-    "categories": ["טיולים, על האש", "חינם"]
-  },
-  {
     "name": "מנשא מים גמיש 3 ליטר Source Widepac",
-    "description": "<a href='https://pakalhagor.co.il/product/מנשא-מים-גמיש-3-ליטר-source-widepac/'>2 יחידות</a>",
-    "price": 50.00,
+    "description": "<a href='https://pakalhagor.co.il/product/מנשא-מים-גמיש-3-ליטר-source-widepac/'>יחידה 1</a>",
+    "price": 25.00,
     "images": [
       "images/water_bag.jpeg"
     ],
     "categories": ["טיולים, על האש"]
-  },
-  {
-    "name": "מנורת תלייה (איקאה)",
-    "description": "",
-    "price": 0.00,
-    "images": [
-      "images/lamp.jpeg",
-      "images/lamp2.jpeg"
-    ],
-    "categories": ["אחר", "חינם"]
-  },
-  {
-    "name": "תבנית להכנת המבורגר",
-    "description": "קוטר - 12 סמ",
-    "price": 0.00,
-    "images": [
-      "images/burger.jpeg"
-    ],
-    "categories": ["חינם", "מטבח"]
   },
   {
     "name": "ספלים לאספרסו (לבנים)",
@@ -189,5 +62,267 @@
       "images/proteinshaker.jpeg"
     ],
     "categories": ["חינם", "מטבח"]
+  },
+  {
+    "name": "נרות - 21 יחידות",
+    "description": "",
+    "price": 0.00,
+    "images": [
+      "images/candel.jpeg",
+      "images/candel2.jpeg"
+    ],
+    "categories": ["חינם", "אחר"]
+  },
+  {
+    "name": "ערכת משקולות יד לאימון 20 ק״ג",
+    "description": "<a href='https://www.decathlon.co.il/iw/מכשירי-חדר-כושר/7449-1741-20-quote.html#/demodelsize-254ללא_מידה/demodelcolor-8018574'>DECATHLON</a>",
+    "price": 100.00,
+    "images": [
+      "images/weight_kit.jpeg",
+      "images/weight_kit2.jpeg"
+    ],
+    "categories": ["אחר"]
+  },
+  {
+    "name": "מסגרות לתמונות",
+    "description": "3 יחידות",
+    "price": 0.00,
+    "images": [
+      "images/photo_frame.jpeg"
+    ],
+    "categories": ["אחר", "חינם"]
+  },
+  {
+    "name": "קישוט/סט 3 יחידות, ירוק",
+    "description": "IKEA",
+    "price": 50.00,
+    "images": [
+      "images/SJÄLSLIGT.jpeg"
+    ],
+    "categories": ["אחר"]
+  },
+  {
+    "name": "תומך ספרים",
+    "description": "IKEA",
+    "price": 0.00,
+    "images": [
+      "images/BUSBASSE.jpeg",
+      "images/BUSBASSE2.jpeg"
+    ],
+    "categories": ["אחר", "חינם"]
+  },
+  {
+    "name": "אביזרים לאימונים",
+    "description": "משקולות - 3 ק״ג",
+    "price": 0.00,
+    "images": [
+      "images/sport.jpeg"
+    ],
+    "categories": ["אחר", "חינם"]
+  },
+  {
+    "name": "מכונת פסטה ביתית",
+    "description": "מכונת פסטה ביתית להכנת פסטה טעימה וטרייה TOOLS",
+    "price": 50.00,
+    "images": [
+      "images/pasta_maker.jpeg"
+    ],
+    "categories": ["מטבח"]
+  },
+  {
+    "name": "אביזרים לצמחים",
+    "description": "דשן גינה פורחת, דשן לעצי פרי, תערובת גן (1/3 שקית), טוף אדום (1/3 שקית)",
+    "price": 0.00,
+    "images": [
+      "images/fertilizer.jpeg",
+      "images/fertilizer2.jpeg",
+      "images/garden_mix.jpeg",
+      "images/tuff.jpeg"
+    ],
+    "categories": ["אחר", "חינם"]
+  },
+  {
+    "name": "2 אביזרים לצמחים",
+    "description": "",
+    "price": 0.00,
+    "images": [
+      "images/garden.jpeg",
+      "images/garden2.jpeg",
+      "images/garden3.jpeg",
+      "images/garden4.jpeg",
+      "images/garden5.jpeg",
+      "images/garden6.jpeg",
+      "images/garden7.jpeg"
+    ],
+    "categories": ["אחר", "חינם"]
+  },
+  {
+    "name": "מסגרת JALLVIK (איקאה)",
+    "description": "2 יחידות",
+    "price": 50.00,
+    "images": [
+      "images/paint_frame.jpeg",
+      "images/paint_frame2.jpeg"
+    ],
+    "categories": ["אחר"]
+  },
+  {
+    "name": "קישוט ״שעון חול״",
+    "description": "",
+    "price": 0.00,
+    "images": [
+      "images/hourglass.jpeg",
+      "images/hourglass2.jpeg"
+    ],
+    "categories": ["אחר", "חינם"]
+  },
+  {
+    "name": "מנורת שולחן",
+    "description": "IKEA",
+    "price": 0.00,
+    "images": [
+      "images/table_lamp.jpeg"
+    ],
+    "categories": ["אחר", "חינם"]
+  },
+  {
+    "name": "מערוך מתכוונן",
+    "description": "Joseph Joseph",
+    "price": 50.00,
+    "images": [
+      "images/rolling_pin.jpeg"
+    ],
+    "categories": ["מטבח"]
+  },
+  {
+    "name": "מסחטת הדרים",
+    "description": "Joseph Joseph",
+    "price": 10.00,
+    "images": [
+      "images/juice.jpeg",
+      "images/juice2.jpeg"
+    ],
+    "categories": ["מטבח"]
+  },
+  {
+    "name": "מחצלת להכנת סושי",
+    "description": "",
+    "price": 0.00,
+    "images": [
+      "images/sushi_mat.jpeg"
+    ],
+    "categories": ["מטבח", "חינם"]
+  },
+  {
+    "name": "קנקן עם מכסה",
+    "description": "1.5 ליטר, איקאה",
+    "price": 0.00,
+    "images": [
+      "images/jug_ikea.jpeg"
+    ],
+    "categories": ["מטבח", "חינם"]
+  },
+  {
+    "name": "מכונה לניקוי רגלים של כלב",
+    "description": "",
+    "price": 0.00,
+    "images": [
+      "images/dog_wash.jpeg",
+      "images/dog_wash2.jpeg"
+    ],
+    "categories": ["אחר", "חינם"]
+  },
+  {
+    "name": "מסלסל שיער",
+    "description": "BaByliss",
+    "price": 0.00,
+    "images": [
+      "images/BaByliss.jpeg"
+    ],
+    "categories": ["אחר", "חינם"]
+  },
+  {
+    "name": "מגש הגשה לפיצה מעץ עבה",
+    "description": "קוטר - 35 ס״מ",
+    "price": 0.00,
+    "images": [
+      "images/pizza.jpeg"
+    ],
+    "categories": ["אחר", "חינם"]
+  },
+  {
+    "name": "וו תלייה להדבקה",
+    "description": "<a href='https://www.ikea.com/il/he/p/skoghall-hook-self-adhesive-chrome-plated-30207075/'>ikea</a>",
+    "price": 20.00,
+    "images": [
+      "images/SKOGHALL.jpeg"
+    ],
+    "categories": ["אחר"]
+  },
+  {
+    "name": "מחבת שקשוקה",
+    "description": "<a href='https://soltam.co.il/product/מחבת-שקשוקה-מיני-416-סמ-piccolo-ציפוי-שיש-סולתם/'>4 יחידות</a>",
+    "price": 50.00,
+    "images": [
+      "images/soltam.jpeg"
+    ],
+    "categories": ["מטבח"]
+  },
+  {
+    "name": "מחבת מרובע",
+    "description": "",
+    "price": 0.00,
+    "images": [
+      "images/square_pan.jpeg"
+    ],
+    "categories": ["מטבח", "חינם"]
+  },
+  {
+    "name": "מגרד",
+    "description": "",
+    "price": 0.00,
+    "images": [
+      "images/grater.jpeg"
+    ],
+    "categories": ["מטבח", "חינם"]
+  },
+  {
+    "name": "משקל דיגיטלי למטבח",
+    "description": "",
+    "price": 0.00,
+    "images": [
+      "images/weight.jpeg"
+    ],
+    "categories": ["מטבח", "חינם"]
+  },
+  {
+    "name": "מדפים 59*20 כולל תומכים",
+    "description": "איקאה",
+    "price": 0.00,
+    "images": [
+      "images/shelvs.jpeg"
+    ],
+    "categories": ["אחר", "חינם"]
+  },
+  {
+    "name": "סט מקדחי כוס",
+    "description": "איקאה",
+    "price": 0.00,
+    "images": [
+      "images/TRIXIG.jpeg",
+      "images/TRIXIG2.jpeg"
+    ],
+    "categories": ["אחר", "חינם"]
+  },
+  {
+    "name": "אזירים לעל אש",
+    "description": "",
+    "price": 0.00,
+    "images": [
+      "images/bbq.jpeg",
+      "images/bbq2.jpeg",
+      "images/bbq3.jpeg"
+    ],
+    "categories": ["אחר", "חינם"]
   }
 ]
