@@ -19,15 +19,6 @@
     "categories": ["טיולים, על האש"]
   },
   {
-    "name": "גזיה Primus Express Stove",
-    "description": "<a href='https://pakalhagor.co.il/product/גזייה-עם-מצת-primus-stove/'>הגזייה מיועדת למיכלי הברגה</a>",
-    "price": 100.00,
-    "images": [
-      "images/primus.jpeg"
-    ],
-    "categories": ["טיולים, על האש"]
-  },
-  {
     "name": "מנשא מים גמיש 3 ליטר Source Widepac",
     "description": "<a href='https://pakalhagor.co.il/product/מנשא-מים-גמיש-3-ליטר-source-widepac/'>יחידה 1</a>",
     "price": 25.00,
@@ -121,15 +112,6 @@
     "categories": ["אחר", "חינם"]
   },
   {
-    "name": "מכונת פסטה ביתית",
-    "description": "מכונת פסטה ביתית להכנת פסטה טעימה וטרייה TOOLS",
-    "price": 50.00,
-    "images": [
-      "images/pasta_maker.jpeg"
-    ],
-    "categories": ["מטבח"]
-  },
-  {
     "name": "אביזרים לצמחים",
     "description": "דשן גינה פורחת, דשן לעצי פרי, תערובת גן (1/3 שקית), טוף אדום (1/3 שקית)",
     "price": 0.00,
@@ -167,23 +149,13 @@
     "categories": ["אחר"]
   },
   {
-    "name": "קישוט ״שעון חול״",
-    "description": "",
-    "price": 0.00,
-    "images": [
-      "images/hourglass.jpeg",
-      "images/hourglass2.jpeg"
-    ],
-    "categories": ["אחר", "חינם"]
-  },
-  {
     "name": "מנורת שולחן",
     "description": "IKEA",
-    "price": 0.00,
+    "price": 10.00,
     "images": [
       "images/table_lamp.jpeg"
     ],
-    "categories": ["מוצרי חשמל", "חינם"]
+    "categories": ["מוצרי חשמל"]
   },
   {
     "name": "מערוך מתכוונן",
@@ -235,20 +207,20 @@
   {
     "name": "מסלסל שיער",
     "description": "BaByliss",
-    "price": 0.00,
+    "price": 50.00,
     "images": [
       "images/BaByliss.jpeg"
     ],
-    "categories": ["מוצרי חשמל", "חינם"]
+    "categories": ["מוצרי חשמל"]
   },
   {
     "name": "מגש הגשה לפיצה מעץ עבה",
     "description": "קוטר - 35 ס״מ",
-    "price": 0.00,
+    "price": 15.00,
     "images": [
       "images/pizza.jpeg"
     ],
-    "categories": ["אחר", "חינם"]
+    "categories": ["מטבח"]
   },
   {
     "name": "וו תלייה להדבקה",
