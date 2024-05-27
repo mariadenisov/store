@@ -103,15 +103,6 @@
     "categories": ["אחר", "חינם"]
   },
   {
-    "name": "אביזרים לאימונים",
-    "description": "משקולות - 3 ק״ג",
-    "price": 0.00,
-    "images": [
-      "images/sport.jpeg"
-    ],
-    "categories": ["אחר", "חינם"]
-  },
-  {
     "name": "אביזרים לצמחים",
     "description": "דשן גינה פורחת, דשן לעצי פרי, תערובת גן (1/3 שקית), טוף אדום (1/3 שקית)",
     "price": 0.00,
@@ -149,30 +140,11 @@
     "categories": ["אחר"]
   },
   {
-    "name": "מנורת שולחן",
-    "description": "IKEA",
-    "price": 10.00,
-    "images": [
-      "images/table_lamp.jpeg"
-    ],
-    "categories": ["מוצרי חשמל"]
-  },
-  {
     "name": "מערוך מתכוונן",
     "description": "Joseph Joseph",
     "price": 50.00,
     "images": [
       "images/rolling_pin.jpeg"
-    ],
-    "categories": ["מטבח"]
-  },
-  {
-    "name": "מסחטת הדרים",
-    "description": "Joseph Joseph",
-    "price": 10.00,
-    "images": [
-      "images/juice.jpeg",
-      "images/juice2.jpeg"
     ],
     "categories": ["מטבח"]
   },
@@ -259,30 +231,11 @@
     "categories": ["מטבח", "חינם"]
   },
   {
-    "name": "משקל דיגיטלי למטבח",
-    "description": "",
-    "price": 0.00,
-    "images": [
-      "images/weight.jpeg"
-    ],
-    "categories": ["מטבח", "חינם"]
-  },
-  {
     "name": "מדפים 59*20 כולל תומכים",
     "description": "איקאה",
     "price": 0.00,
     "images": [
       "images/shelvs.jpeg"
-    ],
-    "categories": ["אחר", "חינם"]
-  },
-  {
-    "name": "סט מקדחי כוס",
-    "description": "איקאה",
-    "price": 0.00,
-    "images": [
-      "images/TRIXIG.jpeg",
-      "images/TRIXIG2.jpeg"
     ],
     "categories": ["אחר", "חינם"]
   },
@@ -296,14 +249,5 @@
       "images/bbq3.jpeg"
     ],
     "categories": ["טיולים, על האש", "חינם"]
-  },
-  {
-    "name": "קערה",
-    "description": "",
-    "price": 0.00,
-    "images": [
-      "images/basket.jpeg"
-    ],
-    "categories": ["מטבח", "חינם"]
   }
 ]
