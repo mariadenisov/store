@@ -103,18 +103,6 @@
     "categories": ["אחר", "חינם"]
   },
   {
-    "name": "אביזרים לצמחים",
-    "description": "דשן גינה פורחת, דשן לעצי פרי, תערובת גן (1/3 שקית), טוף אדום (1/3 שקית)",
-    "price": 0.00,
-    "images": [
-      "images/fertilizer.jpeg",
-      "images/fertilizer2.jpeg",
-      "images/garden_mix.jpeg",
-      "images/tuff.jpeg"
-    ],
-    "categories": ["אחר", "חינם"]
-  },
-  {
     "name": "2 אביזרים לצמחים",
     "description": "",
     "price": 0.00,
