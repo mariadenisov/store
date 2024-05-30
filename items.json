@@ -55,16 +55,6 @@
     "categories": ["חינם", "מטבח"]
   },
   {
-    "name": "נרות - 21 יחידות",
-    "description": "",
-    "price": 0.00,
-    "images": [
-      "images/candel.jpeg",
-      "images/candel2.jpeg"
-    ],
-    "categories": ["חינם", "אחר"]
-  },
-  {
     "name": "ערכת משקולות יד לאימון 20 ק״ג",
     "description": "<a href='https://www.decathlon.co.il/iw/מכשירי-חדר-כושר/7449-1741-20-quote.html#/demodelsize-254ללא_מידה/demodelcolor-8018574'>DECATHLON</a>",
     "price": 100.00,
@@ -217,16 +207,5 @@
       "images/grater.jpeg"
     ],
     "categories": ["מטבח", "חינם"]
-  },
-  {
-    "name": "אזירים לעל אש",
-    "description": "",
-    "price": 0.00,
-    "images": [
-      "images/bbq.jpeg",
-      "images/bbq2.jpeg",
-      "images/bbq3.jpeg"
-    ],
-    "categories": ["טיולים, על האש", "חינם"]
   }
 ]
