@@ -227,7 +227,7 @@
   },
   {
     "name": "כוס מדידה",
-    "description": "<https://www.oxo.com/4-cup-angled-measuring-cup.html'>1 ליטר, 4 כוסות</a>",
+    "description": "<a href='https://www.oxo.com/4-cup-angled-measuring-cup.html'>1 ליטר, 4 כוסות</a>",
     "price": 0.00,
     "images": [
       "images/oxo.jpeg"
@@ -236,7 +236,7 @@
   },
   {
     "name": "סלסילה, 2 יחידות",
-    "description": "<https://www.ikea.com/il/he/p/risatorp-basket-white-90281618/#content'>25x26x18</a>",
+    "description": "<a href='https://www.ikea.com/il/he/p/risatorp-basket-white-90281618/#content'>25x26x18</a>",
     "price": 30.00,
     "images": [
       "images/RISATORP.jpeg"
@@ -245,7 +245,7 @@
   },
   {
     "name": "משענת לרגליים",
-    "description": "<https://www.ikea.com/il/he/p/dagotto-foot-rest-black-40240989/'>איקאה</a>",
+    "description": "<a href='https://www.ikea.com/il/he/p/dagotto-foot-rest-black-40240989/'>איקאה</a>",
     "price": 50.00,
     "images": [
       "images/DAGOTTO.jpeg"
@@ -254,7 +254,7 @@
   },
   {
     "name": "קופסת אחסון קטנה",
-    "description": "<https://www.sohocenter.co.il/products/102719136-easystore-small-storage-basket-ecru'>JOSEPH JOSEPH</a>",
+    "description": "<a href='https://www.sohocenter.co.il/products/102719136-easystore-small-storage-basket-ecru'>JOSEPH JOSEPH</a>",
     "price": 25.00,
     "images": [
       "images/eazy.jpeg"
@@ -281,7 +281,7 @@
   },
   {
     "name": "מראה לשולחן",
-    "description": "<https://www.ikea.com/il/he/p/lindbyn-table-mirror-black-50486339/'>שחור, 14*27</a>",
+    "description": "<a href='https://www.ikea.com/il/he/p/lindbyn-table-mirror-black-50486339/'>שחור, 14*27</a>",
     "price": 50.00,
     "images": [
       "images/LINDBYN.jpeg"
