@@ -55,16 +55,6 @@
     "categories": ["חינם", "מטבח"]
   },
   {
-    "name": "ערכת משקולות יד לאימון 20 ק״ג",
-    "description": "<a href='https://www.decathlon.co.il/iw/מכשירי-חדר-כושר/7449-1741-20-quote.html#/demodelsize-254ללא_מידה/demodelcolor-8018574'>DECATHLON</a>",
-    "price": 100.00,
-    "images": [
-      "images/weight_kit.jpeg",
-      "images/weight_kit2.jpeg"
-    ],
-    "categories": ["אחר"]
-  },
-  {
     "name": "מסגרות לתמונות",
     "description": "3 יחידות",
     "price": 0.00,
@@ -207,5 +197,104 @@
       "images/grater.jpeg"
     ],
     "categories": ["מטבח", "חינם"]
+  },
+  {
+    "name": "4 כיסאות TOBIAS",
+    "description": "<a href='https://www.ikea.com/il/he/p/tobias-chair-transparent-chrome-plated-80349671/'>4 יחידות</a>",
+    "price": 800.00,
+    "images": [
+      "images/tobias.jpeg"
+    ],
+    "categories": ["מטבח", "ריהוט"]
+  },
+  {
+    "name": "סל כביסה FYLLEN",
+    "description": "<a href='https://www.ikea.com/il/he/p/fyllen-laundry-basket-white-60522049/'>סל כביסה, לבן</a>",
+    "price": 0.00,
+    "images": [
+      "images/FYLLEN.jpeg"
+    ],
+    "categories": ["אחר", "חינם"]
+  },
+  {
+    "name": "קרש גיהוץ, שולחני",
+    "description": "<a href='https://www.ikea.com/il/he/p/jaell-ironingboard-table-20242890/'>73*32</a>",
+    "price": 0.00,
+    "images": [
+      "images/JÄLL.jpeg"
+    ],
+    "categories": ["אחר", "חינם"]
+  },
+  {
+    "name": "כוס מדידה",
+    "description": "<https://www.oxo.com/4-cup-angled-measuring-cup.html'>1 ליטר, 4 כוסות</a>",
+    "price": 0.00,
+    "images": [
+      "images/oxo.jpeg"
+    ],
+    "categories": ["מטבח", "חינם"]
+  },
+  {
+    "name": "סלסילה, 2 יחידות",
+    "description": "<https://www.ikea.com/il/he/p/risatorp-basket-white-90281618/#content'>25x26x18</a>",
+    "price": 30.00,
+    "images": [
+      "images/RISATORP.jpeg"
+    ],
+    "categories": ["חינם"]
+  },
+  {
+    "name": "משענת לרגליים",
+    "description": "<https://www.ikea.com/il/he/p/dagotto-foot-rest-black-40240989/'>איקאה</a>",
+    "price": 50.00,
+    "images": [
+      "images/DAGOTTO.jpeg"
+    ],
+    "categories": ["אחר"]
+  },
+  {
+    "name": "קופסת אחסון קטנה",
+    "description": "<https://www.sohocenter.co.il/products/102719136-easystore-small-storage-basket-ecru'>JOSEPH JOSEPH</a>",
+    "price": 25.00,
+    "images": [
+      "images/eazy.jpeg"
+    ],
+    "categories": ["אחר"]
+  },
+  {
+    "name": "סט קופסאות",
+    "description": "איקאה",
+    "price": 0.00,
+    "images": [
+      "images/makeup_boxes.jpeg"
+    ],
+    "categories": ["אחר", "חינם"]
+  },
+  {
+    "name": "מעמד טלוויזיה איקאה",
+    "description": "איקאה",
+    "price": 0.00,
+    "images": [
+      "images/lack.jpeg"
+    ],
+    "categories": ["ריהוט", "חינם"]
+  },
+  {
+    "name": "מראה לשולחן",
+    "description": "<https://www.ikea.com/il/he/p/lindbyn-table-mirror-black-50486339/'>שחור, 14*27</a>",
+    "price": 50.00,
+    "images": [
+      "images/LINDBYN.jpeg"
+    ],
+    "categories": ["אחר"]
+  },
+  {
+    "name": "מנורה עומדת",
+    "description": "איקאה",
+    "price": 50.00,
+    "images": [
+      "images/lamp.jpeg"
+    ],
+    "categories": ["אחר"]
   }
 ]
