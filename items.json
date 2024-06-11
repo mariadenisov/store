@@ -287,14 +287,5 @@
       "images/LINDBYN.jpeg"
     ],
     "categories": ["אחר"]
-  },
-  {
-    "name": "מנורה עומדת",
-    "description": "איקאה",
-    "price": 50.00,
-    "images": [
-      "images/lamp.jpeg"
-    ],
-    "categories": ["אחר"]
   }
 ]
