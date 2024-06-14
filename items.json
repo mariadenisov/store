@@ -269,14 +269,5 @@
       "images/lack.jpeg"
     ],
     "categories": ["ריהוט", "חינם"]
-  },
-  {
-    "name": "מראה לשולחן",
-    "description": "<a href='https://www.ikea.com/il/he/p/lindbyn-table-mirror-black-50486339/'>שחור, 14*27</a>",
-    "price": 50.00,
-    "images": [
-      "images/LINDBYN.jpeg"
-    ],
-    "categories": ["אחר"]
   }
 ]
