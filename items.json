@@ -269,5 +269,24 @@
       "images/lack.jpeg"
     ],
     "categories": ["ריהוט", "חינם"]
+  },
+  {
+    "name": "מכשיר לעיסוי גב",
+    "description": "<a href='https://www.aliexpress.com/item/4000400825804.html?srcSns=sns_More&spreadType=socialShare&bizType=ProductDetail&social_params=60657394155&aff_fcid=63b442fd923046af95e3a60239e59ea1-1718345280180-07086-_EH1mHj9&tt=MG&aff_fsk=_EH1mHj9&aff_platform=default&sk=_EH1mHj9&aff_trace_key=63b442fd923046af95e3a60239e59ea1-1718345280180-07086-_EH1mHj9&shareId=60657394155&businessType=ProductDetail&platform=AE&terminal_id=1617246300e04dec8df7c24dbf7b9a3d&afSmartRedirect=y'>aliexpress</a>ה",
+    "price": 0.00,
+    "images": [
+      "images/massage.jpeg"
+    ],
+    "categories": ["מוצרי חשמל", "חינם"]
+  },
+  {
+    "name": "מתג דוד חכם (חדש)",
+    "description": "<a href='https://he.aliexpress.com/item/33020659733.html?srcSns=sns_More&spreadType=socialShare&bizType=ProductDetail&social_params=60659711915&aff_fcid=eda3b172564949229033485fc98fcd4e-1718345463827-00075-_EGVniQJ&tt=MG&aff_fsk=_EGVniQJ&aff_platform=default&sk=_EGVniQJ&aff_trace_key=eda3b172564949229033485fc98fcd4e-1718345463827-00075-_EGVniQJ&shareId=60659711915&businessType=ProductDetail&platform=AE&terminal_id=1617246300e04dec8df7c24dbf7b9a3d&afSmartRedirect=y&gatewayAdapt=glo2isr'>aliexpress</a>ה",
+    "price": 0.00,
+    "images": [
+      "images/boiler.jpeg",
+      "images/boiler2.jpeg"
+    ],
+    "categories": ["מוצרי חשמל", "חינם"]
   }
 ]
