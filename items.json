@@ -262,15 +262,6 @@
     "categories": ["אחר"]
   },
   {
-    "name": "סט קופסאות",
-    "description": "איקאה",
-    "price": 0.00,
-    "images": [
-      "images/makeup_boxes.jpeg"
-    ],
-    "categories": ["אחר", "חינם"]
-  },
-  {
     "name": "מעמד טלוויזיה איקאה",
     "description": "איקאה",
     "price": 0.00,
