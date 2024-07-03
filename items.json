@@ -1,33 +1,4 @@
-[
-  {
-    "name": "שולחן אלומיניום מתקפל",
-    "description": "<a href='https://www.tiul.net/items/2184951-שולחן-אלומיניום-מתקפל-לקמפינג-ולשטח-קטן-דגם-360-coleman' target='_blank'>שולחן אלומיניום מתקפל לקמפינג ולשטח קטן דגם 360</a>",
-    "price": 100.00,
-    "images": [
-      "images/picnik_table.jpeg", 
-      "images/picnik_table2.jpeg"
-    ],
-    "categories": ["טיולים, על האש"]
-  },
-  {
-    "name": "כיסאות קמפינג מתקפל",
-    "description": "<a href='https://www.hagorshops.co.il/קטלוג-מוצרים-חגור-שופס/כיסא-קמפינג-מתקפל-קולמן-coleman/'>2 כיסאות. חברת קולמן</a>",
-    "price": 200.00,
-    "images": [
-      "images/camping_chair.jpeg"
-    ],
-    "categories": ["טיולים, על האש"]
-  },
-  {
-    "name": "מנשא מים גמיש 3 ליטר Source Widepac",
-    "description": "<a href='https://pakalhagor.co.il/product/מנשא-מים-גמיש-3-ליטר-source-widepac/'>יחידה 1</a>",
-    "price": 25.00,
-    "images": [
-      "images/water_bag.jpeg"
-    ],
-    "categories": ["טיולים, על האש"]
-  },
-  {
+[{
     "name": "ספלים לאספרסו (לבנים)",
     "description": "",
     "price": 0.00,
@@ -55,15 +26,6 @@
     "categories": ["חינם", "מטבח"]
   },
   {
-    "name": "מסגרות לתמונות",
-    "description": "3 יחידות",
-    "price": 0.00,
-    "images": [
-      "images/photo_frame.jpeg"
-    ],
-    "categories": ["אחר", "חינם"]
-  },
-  {
     "name": "קישוט/סט 3 יחידות, ירוק",
     "description": "IKEA",
     "price": 50.00,
@@ -81,40 +43,6 @@
       "images/BUSBASSE2.jpeg"
     ],
     "categories": ["אחר", "חינם"]
-  },
-  {
-    "name": "2 אביזרים לצמחים",
-    "description": "",
-    "price": 0.00,
-    "images": [
-      "images/garden.jpeg",
-      "images/garden2.jpeg",
-      "images/garden3.jpeg",
-      "images/garden4.jpeg",
-      "images/garden5.jpeg",
-      "images/garden6.jpeg",
-      "images/garden7.jpeg"
-    ],
-    "categories": ["אחר", "חינם"]
-  },
-  {
-    "name": "מסגרת JALLVIK (איקאה)",
-    "description": "2 יחידות",
-    "price": 50.00,
-    "images": [
-      "images/paint_frame.jpeg",
-      "images/paint_frame2.jpeg"
-    ],
-    "categories": ["אחר"]
-  },
-  {
-    "name": "מערוך מתכוונן",
-    "description": "Joseph Joseph",
-    "price": 50.00,
-    "images": [
-      "images/rolling_pin.jpeg"
-    ],
-    "categories": ["מטבח"]
   },
   {
     "name": "מחצלת להכנת סושי",
@@ -199,15 +127,6 @@
     "categories": ["מטבח", "חינם"]
   },
   {
-    "name": "4 כיסאות TOBIAS",
-    "description": "<a href='https://www.ikea.com/il/he/p/tobias-chair-transparent-chrome-plated-80349671/'>4 יחידות</a>",
-    "price": 800.00,
-    "images": [
-      "images/tobias.jpeg"
-    ],
-    "categories": ["מטבח", "ריהוט"]
-  },
-  {
     "name": "סל כביסה FYLLEN",
     "description": "<a href='https://www.ikea.com/il/he/p/fyllen-laundry-basket-white-60522049/'>סל כביסה, לבן</a>",
     "price": 0.00,
@@ -260,24 +179,5 @@
       "images/eazy.jpeg"
     ],
     "categories": ["אחר"]
-  },
-  {
-    "name": "מעמד טלוויזיה איקאה",
-    "description": "איקאה",
-    "price": 0.00,
-    "images": [
-      "images/lack.jpeg"
-    ],
-    "categories": ["ריהוט", "חינם"]
-  },
-  {
-    "name": "מתג דוד חכם (חדש)",
-    "description": "<a href='https://he.aliexpress.com/item/33020659733.html?srcSns=sns_More&spreadType=socialShare&bizType=ProductDetail&social_params=60659711915&aff_fcid=eda3b172564949229033485fc98fcd4e-1718345463827-00075-_EGVniQJ&tt=MG&aff_fsk=_EGVniQJ&aff_platform=default&sk=_EGVniQJ&aff_trace_key=eda3b172564949229033485fc98fcd4e-1718345463827-00075-_EGVniQJ&shareId=60659711915&businessType=ProductDetail&platform=AE&terminal_id=1617246300e04dec8df7c24dbf7b9a3d&afSmartRedirect=y&gatewayAdapt=glo2isr'>aliexpress</a>ה",
-    "price": 0.00,
-    "images": [
-      "images/boiler.jpeg",
-      "images/boiler2.jpeg"
-    ],
-    "categories": ["מוצרי חשמל", "חינם"]
   }
 ]
